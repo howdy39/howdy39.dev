@@ -159,6 +159,7 @@
                 "group": "2025/05",
                 "pages": [
                   "ja/blog/2025-05-30-note-notion-represent-people",
+                  "ja/blog/2025-05-21-stores-product-blog-saas-migration-redirect-chrome-extension",
                   "ja/blog/2025-05-11-note-tech-the-toaster"
                 ]
               },
@@ -186,7 +187,8 @@
                 "group": "2024/12",
                 "pages": [
                   "ja/blog/2024-12-30-note-2024-review",
-                  "ja/blog/2024-12-24-note-resilient-it-team"
+                  "ja/blog/2024-12-24-note-resilient-it-team",
+                  "ja/blog/2024-12-10-stores-note-interview-corporate-engineer-work"
                 ]
               },
               {
@@ -199,6 +201,7 @@
               {
                 "group": "2024/02",
                 "pages": [
+                  "ja/blog/2024-02-21-stores-product-blog-safety-confirmation-service-operation-design",
                   "ja/blog/2024-02-04-zenn-admina-api-looker-studio"
                 ]
               },
@@ -242,6 +245,7 @@
               {
                 "group": "2023/08",
                 "pages": [
+                  "ja/blog/2023-08-30-stores-note-interview-400-account-migration",
                   "ja/blog/2023-08-17-zenn-slack-workflow-simple-ticketing"
                 ]
               },
@@ -251,6 +255,7 @@
                   "ja/blog/2023-04-30-zenn-gas-export-google-groups-settings",
                   "ja/blog/2023-04-24-note-chatgpt-internal-assistant-bot",
                   "ja/blog/2023-04-14-note-gas-internal-training",
+                  "ja/blog/2023-04-03-stores-product-blog-google-workspace-account-migration-rename",
                   "ja/blog/2023-04-03-note-stores-px-advent-calendar-spring"
                 ]
               },
@@ -673,6 +678,7 @@
                 "group": "2025/05",
                 "pages": [
                   "en/blog/2025-05-30-note-notion-represent-people",
+                  "en/blog/2025-05-21-stores-product-blog-saas-migration-redirect-chrome-extension",
                   "en/blog/2025-05-11-note-tech-the-toaster"
                 ]
               },
@@ -700,7 +706,8 @@
                 "group": "2024/12",
                 "pages": [
                   "en/blog/2024-12-30-note-2024-review",
-                  "en/blog/2024-12-24-note-resilient-it-team"
+                  "en/blog/2024-12-24-note-resilient-it-team",
+                  "en/blog/2024-12-10-stores-note-interview-corporate-engineer-work"
                 ]
               },
               {
@@ -713,6 +720,7 @@
               {
                 "group": "2024/02",
                 "pages": [
+                  "en/blog/2024-02-21-stores-product-blog-safety-confirmation-service-operation-design",
                   "en/blog/2024-02-04-zenn-admina-api-looker-studio"
                 ]
               },
@@ -756,6 +764,7 @@
               {
                 "group": "2023/08",
                 "pages": [
+                  "en/blog/2023-08-30-stores-note-interview-400-account-migration",
                   "en/blog/2023-08-17-zenn-slack-workflow-simple-ticketing"
                 ]
               },
@@ -765,6 +774,7 @@
                   "en/blog/2023-04-30-zenn-gas-export-google-groups-settings",
                   "en/blog/2023-04-24-note-chatgpt-internal-assistant-bot",
                   "en/blog/2023-04-14-note-gas-internal-training",
+                  "en/blog/2023-04-03-stores-product-blog-google-workspace-account-migration-rename",
                   "en/blog/2023-04-03-note-stores-px-advent-calendar-spring"
                 ]
               },

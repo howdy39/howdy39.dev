@@ -35,6 +35,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
    - `description`: 著者が自分で紹介する口調（です・ます調、主語は省く）で、150〜200字ほど。記事に書いていない感想は足さない。`llms.txt` と検索に使われる。
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
+     会社のブログに載った記事は、掲載元を `STORES note`（note.st.inc）や `STORES Product Blog`（product.st.inc）にする。ファイル名の掲載元の部分は `stores-note` / `stores-product-blog`。Card の本文も同じ名前。インタビューなど、自分が載っている記事も、同じ形で足す。
 2. `docs.json` の `ja` の「Blog posts」グループにある、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。
 3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
 
@@ -53,15 +54,15 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
    - `docs.json` の `en` の「Blog posts」グループに、同じ月のグループで、ページを追加する。
    - `en/blog/index.mdx` に、同じ `Update` ブロックを追加する。タイトルとタグだけ英訳し、日付・画像・リンクは同じにする。
-   - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）
+   - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）/ `Front-end`（フロントエンド）
 
 ## トピックのタグ
 
 表記ゆれがあるとフィルターが別のタグに分かれるので、次の表記を使う。1記事に複数付けてよい。
 一覧にないトピックが必要になったら、勝手に足さず、先に相談する。
-一覧のどれにも合わない記事（2018〜2019年の Vue.js・Nuxt・Chrome などのフロントエンドの記事や、採用の記事の一部）は、`tags` を付けず、`Update` の `tags` 属性を省略している。
+一覧のどれにも合わない記事（今は STORES の PX アドベントカレンダーの告知の1件）は、`tags` を付けず、`Update` の `tags` 属性を省略している。
 
-`AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS管理` / `ID` / `セキュリティ` / `情シス` / `マネジメント` / `エッセイ`
+`AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS管理` / `ID` / `セキュリティ` / `情シス` / `マネジメント` / `エッセイ` / `フロントエンド`
 
 ## Speaking（登壇・メディア掲載・スライド）
 
