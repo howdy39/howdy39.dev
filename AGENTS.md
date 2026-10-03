@@ -12,8 +12,8 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 ## 構成
 
-- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking・Books を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
-- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Books の4項目だけを出す。
+- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking・Books・Videos を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
+- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Books / Videos の5項目だけを出す。
 - ページは `ja/` `en/` の下に置く。内部リンクは `/ja/...` のようにパス付きで書く。
 
 ## Blog の記事の追加
@@ -126,6 +126,11 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 `ja/books.mdx` と `en/books.mdx`（サイドバーの「Books」）に、サークル「Tech The Toaster」の電子書籍4冊（すべて無料。ショップ: https://techthetoaster.stores.jp/ ）を、表紙付きのカードで載せている。ホームには載せない（重要度が高くないため、Blog や Speaking と同じ、独立したメニューにした）。
 画像はショップの URL（`imagedelivery.net`、`fit=scale-down,w=460` で、元の比率の 460×650）で、`width`・`height` を付けている。`fit=cover` で切り抜くと、表紙の上下が切れる。書籍が増えたら、カードを足す（日本語版と英語版の両方）。
+
+## Videos（YouTube に出演した動画）のページ
+
+`ja/videos.mdx` と `en/videos.mdx`（サイドバーの「Videos」）に、YouTube に出演した動画を、サムネイル付きのカードで、新しい順に載せている。サムネイルは `https://i.ytimg.com/vi/<動画ID>/maxresdefault.jpg`（1280×720）で、`width`・`height` と `loading="lazy"` を付けている。リンクは `https://www.youtube.com/watch?v=<動画ID>` だけにして、`&t=` や `&pp=` などの追跡用のパラメータは付けない。
+カードの2行目はチャンネル名、3行目は公開日（日本時間）と再生時間。動画のタイトル・チャンネル・公開日・長さは、`https://www.youtube.com/oembed?url=…&format=json` や、動画のページの `og:title`・`uploadDate` で調べられる。動画が増えたら、カードを足す（日本語版と英語版の両方。英語版はタイトルを英訳する）。
 
 ## 経歴の「主な取り組み」
 
