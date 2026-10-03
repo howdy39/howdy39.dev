@@ -98,14 +98,16 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
   - `登壇`（通常の登壇、ゲスト、パネルなど）/ `基調講演`（キーセッションを含む）/ `LT` / `ファシリテーター` / `外部講師` / `メディア` / `スライド`
   - 英語版は `Talk` / `Keynote` / `Lightning talk` / `Facilitator` / `Guest lecturer` / `Media` / `Slides`
 - `スライド` は、Speaker Deck の資料を、1件1エントリで載せるときのタグ。日付は Speaker Deck の公開日、タイトルは資料のタイトル、リンクの文言（`cta`）は `Speaker Deck`。登壇のエントリに、資料のリンクを足す形にはしない。
-- 登壇の「予定」は、専用のタグを作らず、そのまま `登壇` として足す。
+- 登壇の「予定」は、専用のタグを作らず、そのまま `登壇` として足す。あわせて、ホームの「登壇予定」（`UpcomingTalks`）にも足す。
 
-## ホームの「最近の Blog」「最近の Speaking」
+## ホームの「登壇予定」「最近の Blog」
 
-`ja/index.mdx` と `en/index.mdx` の先頭に、最近の Blog 2件と Speaking 2件を、セクションを縦に並べ、各2枚を横並び（`CardGroup`）の画像付き Card で載せている（自動では更新されない）。
-Blog や Speaking のエントリを足したら、新しい順の上位2件になるよう、ホームの Card も差し替える。
-見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（最近の Blog / 最近の Speaking / 経歴 / お仕事のご依頼）、英語版は英語（Recent Blog / Recent Speaking / Career / Work with me）。SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
-Card は、一覧（`blog/index.mdx`・`speaking.mdx`）と同じ `title`・`img`・`href` を使い、本文は `YYYY/MM/DD · 掲載元（または役割）`。
+`ja/index.mdx` と `en/index.mdx` の先頭に、登壇予定と、最近の Blog 2件を、この順に、セクションを縦に並べて載せている（自動では更新されない）。
+
+- 最近の Blog: 各2枚を横並び（`CardGroup`）の画像付き Card で載せる。Blog のエントリを足したら、新しい順の上位2件になるよう、ホームの Card も差し替える。Card は、一覧（`blog/index.mdx`）と同じ `title`・`img`・`href` を使い、本文は `YYYY/MM/DD · 掲載元`。
+- 登壇予定: `snippets/upcoming-talks.jsx` の `UpcomingTalks` を使う。`talks` に、`date`（`YYYY/MM/DD`）・`title`・`img`・`href` を並べると、サイトを開いた日以降（当日を含む）の登壇だけが、ブラウザ側で表示される。開催日が過ぎたものは自動で消え、1件もなければ「現在、公開している登壇予定はありません。」が出る。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも足す（過ぎたものは消さなくてよいが、溜まったら消す）。
+- 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近の Blog / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent Blog / Career / Work with me）。
+- SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 
 ## 注意
 
