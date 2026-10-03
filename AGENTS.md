@@ -119,8 +119,20 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 - 最近書いたブログ: 4件を、2列の画像付きカード（`<a>` と `<img>`）で載せる。Blog のエントリを足したら、新しい順の上位4件になるよう、`<a>` を差し替える。`href`・`img`・タイトルは、一覧（`blog/index.mdx`）の Card と同じ。日付と掲載元は `YYYY/MM/DD`・`note` のように、下に書く。画像は `loading="lazy"`。
 - 登壇予定: `<div data-upcoming-talks>` の中に、`<a data-talk-date="YYYY/MM/DD">` のカードを並べる。ルートの `upcoming-talks.js`（全ページに読み込まれる）が、サイトを開いた日より前の `data-talk-date` のカードを隠し、1件も残らなければ、`data-upcoming-empty` の「現在、公開している登壇予定はありません。」を出す。サイトは静的なので、再ビルドしなくても、開催日が過ぎたカードは、自動で消える（日付単位。当日は表示）。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも `<a>` を足す。過ぎたものは、消さなくてもよいが、溜まったら消す。先頭のカードの画像だけ `fetchPriority="high"`（LCP の画像）。
-- 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / Career / Work with me）。
+- 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 数字で見る / スキル / メディア掲載・インタビュー / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / By the numbers / Skills / Media & interviews / Career / Work with me）。
 - SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
+
+## ホームの「数字で見る」「スキル」「メディア掲載・インタビュー」
+
+最近書いたブログの下、経歴の上に、ターミナル風のカード（ドット柄の背景、タイトルバーに `howdy39@dev:~ $ …`）を3つ並べている。どれも MDX に HTML を直接書いていて（JS なし。サーバー側で描画される）、`style.css` の `.tech-card` などで飾っている。日本語版と英語版の両方にある。
+
+- 数字で見る: 大きな数字の4枚（記事 160+、登壇 15+、社内登壇 50+、経歴 19年）と、年別の記事数（棒グラフ）、トピック別の記事数（横棒）。数字は、サイトの一覧と経歴から数えた値で、切り上げて「+」を付けている。
+  - 記事: `blog/index.mdx` の `Update` の数。年別とトピック別は、同じ一覧から数える（トピックは複数付くので、合計は記事数を超える）。
+  - 登壇: Speaking の、`登壇`・`基調講演`・`LT`・`ファシリテーター`・`外部講師` のうち、開催済みのもの（`メディア`・`スライド` は数えない）。
+  - 社内登壇 50+ は、経歴の記事（GAS 研修の記事）に書いた事実。経歴の19年は、2007年4月から。
+  - 記事や登壇が増えたら、ときどき数え直す。年が変わったら、年別の棒を足す。
+- スキル: 経歴の表の「技術」と、導入した SaaS、記事に出てくる技術だけを、分野ごとのチップで並べる。根拠のない技術は足さない。
+- メディア掲載・インタビュー: STORES note のインタビュー2件と、ITmedia の記事。Speaking の `メディア` と、Blog の `STORES note` のインタビューが増えたら、ここにも足す。
 
 ## Books（同人誌）のページ
 
@@ -148,10 +160,11 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 ## 注意
 - Blog と Speaking の一覧ページ（`ja/blog/index.mdx`・`en/blog/index.mdx`・`ja/speaking.mdx`・`en/speaking.mdx`）は、フロントマターに `searchable: false` を付けている。`Update` の日付（`label`）が、見出しと同じ扱いで、サイト内検索に「2026/04/29」のような結果として出てしまうため。このページは、サイトマップ・Google の索引・`llms.txt` には、そのまま入る。個別の記事のページは、これまでどおり検索に出る。
 
-- `style.css` は次の5つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
+- `style.css` は次の6つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
   - サイドバーの「Blog › …」「Speaking › …」グループ（`#navigation-items > div`）を隠す。
   - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
   - 外部リンクの Card は右上に矢印が付くので、タイトルが矢印に重ならないよう、タイトルの右に余白を足す（`a:has(> div.absolute) h2`）。
   - 2カラムにした `Update`（Blog、Speaking）で、日付の枠とタグの縦の位置をそろえる（タグの入れ物の上の余白を消す）。
   - ホームの経歴の表で、「役割」の列を1行に収め（`white-space: nowrap`、768px 以上）、残りの幅を「技術」の列に回す。
+  - ホームの「数字で見る」「スキル」「メディア掲載・インタビュー」のカード（`.tech-card`、`.tech-num`、`.tech-bar-now`、`.tech-cursor`）の飾り（ドット柄、数字の発光、カーソルの点滅）。
 - 公開後の `/llms.txt` は CDN にキャッシュされる。最新の中身を見たいときは `/llms.txt?nocache=1` のようにクエリを付ける。
