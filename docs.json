@@ -5,6 +5,7 @@
   "colors": {
     "primary": "#0EA5E9"
   },
+  "favicon": "/images/avatar.png",
   "navigation": {
     "languages": [
       {
