@@ -10,15 +10,14 @@
       {
         "language": "ja",
         "default": true,
-        "tabs": [
+        "pages": [
+          "ja/index",
+          "ja/blog/index",
+          "ja/speaking",
+          "ja/archive",
           {
-            "tab": "Home",
-            "pages": ["ja/index"]
-          },
-          {
-            "tab": "Blog",
+            "group": "Blog posts",
             "pages": [
-              "ja/blog/index",
               {
                 "group": "2026",
                 "expanded": true,
@@ -50,36 +49,16 @@
                 ]
               }
             ]
-          },
-          {
-            "tab": "Speaking",
-            "pages": ["ja/speaking"]
-          },
-          {
-            "tab": "Archive",
-            "pages": ["ja/archive"]
           }
         ]
       },
       {
         "language": "en",
-        "tabs": [
-          {
-            "tab": "Home",
-            "pages": ["en/index"]
-          },
-          {
-            "tab": "Blog",
-            "pages": ["en/blog/index"]
-          },
-          {
-            "tab": "Speaking",
-            "pages": ["en/speaking"]
-          },
-          {
-            "tab": "Archive",
-            "pages": ["en/archive"]
-          }
+        "pages": [
+          "en/index",
+          "en/blog/index",
+          "en/speaking",
+          "en/archive"
         ]
       }
     ]

@@ -12,7 +12,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 ## 構成
 
 - `ja/` が既定の言語、`en/` は Home だけ英訳して、Blog と Archive は日本語版への案内。
-- `docs.json` の `navigation.languages` に言語ごとのタブ（Home / Blog / Archive）を定義している。
+- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Archive の4項目だけを出す。
 - ページは `ja/` `en/` の下に置く。内部リンクは `/ja/...` のようにパス付きで書く。
 
 ## Blog の記事の追加
@@ -34,7 +34,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
    - `description`: 著者が自分で紹介する口調（です・ます調、主語は省く）で、150〜200字ほど。記事に書いていない感想は足さない。`llms.txt` と検索に使われる。
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
-2. `docs.json` の Blog タブに、新しい順でページを追加する。
+2. `docs.json` の `ja` の「Blog posts」グループ（年ごとのグループ）に、新しい順でページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。
 3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
 
    ```
@@ -76,5 +76,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
 ## 注意
 
-- `style.css` は、Blog 一覧（`Update`）を2カラムにするためのもの。Mintlify の DOM（`.update`、`#content`）に頼っているので、Mintlify の更新で崩れる可能性がある。
+- `style.css` は次の2つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
+  - サイドバーの「Blog posts」グループ（`#navigation-items > div`）を隠す。
+  - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
 - 公開後の `/llms.txt` は CDN にキャッシュされる。最新の中身を見たいときは `/llms.txt?nocache=1` のようにクエリを付ける。

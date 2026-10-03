@@ -1,7 +1,6 @@
-/* Blog: show only the "Blog" item in the sidebar, like Speaking. The post pages
-   stay in the navigation (so they are in search and llms.txt) but are not listed. */
-html[data-current-path="/ja/blog"] #navigation-items > div,
-html[data-current-path="/en/blog"] #navigation-items > div {
+/* Sidebar: list only the top-level pages. The Blog posts live in the last
+   navigation group (so they are in search and llms.txt) and are not shown. */
+#navigation-items > div {
   display: none;
 }
 
