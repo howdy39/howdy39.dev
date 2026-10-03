@@ -13,6 +13,14 @@
     "dark": "#16A34A"
   },
   "favicon": "/images/avatar.png",
+  "seo": {
+    "metatags": {
+      "og:image": "https://howdy39.dev/images/ogp.jpg",
+      "og:image:width": "1200",
+      "og:image:height": "630",
+      "twitter:image": "https://howdy39.dev/images/ogp.jpg"
+    }
+  },
   "navbar": {
     "links": [
       {

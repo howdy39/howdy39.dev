@@ -132,6 +132,11 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 `ja/videos.mdx` と `en/videos.mdx`（サイドバーの「Videos」）に、YouTube に出演した動画を、サムネイル付きのカードで、新しい順に載せている。サムネイルは `https://i.ytimg.com/vi/<動画ID>/maxresdefault.jpg`（1280×720）で、`width`・`height` と `loading="lazy"` を付けている。リンクは `https://www.youtube.com/watch?v=<動画ID>` だけにして、`&t=` や `&pp=` などの追跡用のパラメータは付けない。
 カードの2行目はチャンネル名、3行目は公開日（日本時間）と再生時間。動画のタイトル・チャンネル・公開日・長さは、`https://www.youtube.com/oembed?url=…&format=json` や、動画のページの `og:title`・`uploadDate` で調べられる。動画が増えたら、カードを足す（日本語版と英語版の両方。英語版はタイトルを英訳する）。
 
+## SEO（OGP 画像・構造化データ）
+
+- **OGP 画像**: `images/ogp.jpg`（1200×630。アバター、名前、肩書き、ドメイン）を、`docs.json` の `seo.metatags`（`og:image`・`twitter:image`）で、全ページに設定している。これを設定しないと、Mintlify が自動で作る画像の URL（`mintlify.app`）が、OGP に出る。肩書きなどを変えたら、画像を作り直す（HTML をヘッドレス Chrome でスクリーンショットし、`sips` で JPEG にした）。
+- **Person の構造化データ**: ホーム（`ja/index.mdx`・`en/index.mdx`）の先頭に、`<script type="application/ld+json">` で、Person（名前、別名、肩書き、所属、`knowsAbout`、`sameAs`）を書いている。`dangerouslySetInnerHTML` は、中身が空になるので使わず、JSON を、テンプレートリテラルの子要素として書く。肩書き・所属・SNS が変わったら、ここも直す。Mintlify が自動で入れる Organization / WebSite の構造化データは、消せない。
+
 ## 経歴の「主な取り組み」
 
 ホームの経歴の表（`ja/index.mdx`・`en/index.mdx`）の下に、会社ごとの `<Accordion>`（折りたたみ）で、担当と成果を書いている。サイトの目的は「名刺代わりに、実績と発信を1か所にまとめる」ことで、売り込み（料金プランなど）は重視しない（副業は主ではない）。
