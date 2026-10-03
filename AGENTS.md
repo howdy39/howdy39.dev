@@ -110,6 +110,10 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / Career / Work with me）。
 - SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 
+## ホームの「同人誌（無料公開）」
+
+`ja/index.mdx` と `en/index.mdx` の、経歴の前に、サークル「Tech The Toaster」の電子書籍4冊（すべて無料。ショップ: https://techthetoaster.stores.jp/ ）を、表紙付きのカードで載せている。画像はショップの URL（`imagedelivery.net`）で、`width`・`height` を付けている。書籍が増えたら、カードを足す（日本語版と英語版の両方）。
+
 ## 経歴の「主な取り組み」
 
 ホームの経歴の表（`ja/index.mdx`・`en/index.mdx`）の下に、会社ごとの `<Accordion>`（折りたたみ）で、担当と成果を書いている。サイトの目的は「名刺代わりに、実績と発信を1か所にまとめる」ことで、売り込み（料金プランなど）は重視しない（副業は主ではない）。
