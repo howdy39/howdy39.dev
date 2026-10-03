@@ -36,7 +36,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - `description`: 著者が自分で紹介する口調（です・ます調、主語は省く）で、150〜200字ほど。記事に書いていない感想は足さない。`llms.txt` と検索に使われる。
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
      会社のブログに載った記事は、掲載元を `STORES note`（note.st.inc）や `STORES Product Blog`（product.st.inc）にする。ファイル名の掲載元の部分は `stores-note` / `stores-product-blog`。Card の本文も同じ名前。インタビューなど、自分が載っている記事も、同じ形で足す。
-2. `docs.json` の `ja` の「Blog」グループにある、掲載元のグループ（`Blog / note` / `Blog / Zenn` / `Blog / Qiita` / `Blog / STORES note` / `Blog / STORES Product Blog`。検索画面には、一番上のグループは出ず、下の2段だけが出るので、「Blog /」を名前に含めている）の中の、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog / Qiita › 2018/01` のように、掲載元と月が出る。
+2. `docs.json` の `ja` の、掲載元のグループ（`Blog / note` / `Blog / Zenn` / `Blog / Qiita` / `Blog / STORES note` / `Blog / STORES Product Blog`。`navigation` の直下に並んでいる）の中の、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。これらのグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog / Qiita › 2018/01` のように、掲載元と月が出る（グループを入れ子にして一番上に「Blog」を置くと、広い検索画面で「Blog › Blog / Qiita › …」と重なって出るので、置かない）。
 3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
 
    ```
@@ -52,7 +52,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - OGP 画像は、元記事の `og:image` の URL をそのまま使う。
 4. 英語版も作る。`llms.txt` は、既定の言語（日本語）のページだけが本体で、英語は別の索引（`/_llms/en.md`）になるので、英語のページがないと、英語の AI や検索から記事が見つからない。
    - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
-   - `docs.json` の `en` の「Blog」グループに、同じ掲載元・同じ月のグループで、ページを追加する。
+   - `docs.json` の `en` の、同じ掲載元・同じ月のグループに、ページを追加する。
    - `en/blog/index.mdx` に、同じ `Update` ブロックを追加する。タイトルとタグだけ英訳し、日付・画像・リンクは同じにする。
    - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）/ `Front-end`（フロントエンド）/ `Retrospective`（振り返り）
 
@@ -113,7 +113,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 ## 注意
 
 - `style.css` は次の5つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
-  - サイドバーの「Blog」「Speaking」グループ（`#navigation-items > div`）を隠す。
+  - サイドバーの「Blog / …」「Speaking」グループ（`#navigation-items > div`）を隠す。
   - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
   - 外部リンクの Card は右上に矢印が付くので、タイトルが矢印に重ならないよう、タイトルの右に余白を足す（`a:has(> div.absolute) h2`）。
   - 2カラムにした `Update`（Blog、Speaking）で、日付の枠とタグの縦の位置をそろえる（タグの入れ物の上の余白を消す）。
