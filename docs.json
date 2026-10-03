@@ -1,0 +1,11 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "howdy39",
+  "colors": {
+    "primary": "#0EA5E9"
+  },
+  "navigation": {
+    "pages": ["index"]
+  }
+}
