@@ -6,18 +6,23 @@
     "primary": "#0EA5E9"
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Home",
-        "pages": ["index"]
-      },
-      {
-        "tab": "Blog",
-        "pages": ["blog/index"]
-      },
-      {
-        "tab": "Archive",
-        "pages": ["archive"]
+        "language": "ja",
+        "tabs": [
+          {
+            "tab": "Home",
+            "pages": ["index"]
+          },
+          {
+            "tab": "Blog",
+            "pages": ["blog/index"]
+          },
+          {
+            "tab": "Archive",
+            "pages": ["archive"]
+          }
+        ]
       }
     ]
   }
