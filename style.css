@@ -1,0 +1,28 @@
+/* Blog index: show Update entries as a compact two-column grid. */
+@media (min-width: 1024px) {
+  #content:has(> .update) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+
+  #content:has(> .update) > :not(.update) {
+    grid-column: 1 / -1;
+  }
+
+  #content:has(> .update) > .update {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #content:has(> .update) > .update > div:first-child {
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
