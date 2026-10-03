@@ -103,9 +103,10 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 ## ホームの「登壇予定」「最近書いたブログ」
 
 `ja/index.mdx` と `en/index.mdx` の先頭に、登壇予定と、最近書いたブログ4件を、この順に、セクションを縦に並べて載せている（自動では更新されない）。
+どちらも、部品（`snippets/*.jsx`）ではなく、MDX に HTML を直接書いている。`.jsx` の部品は、ブラウザでスクリプトが動いてから描画されるため、画像が最初の HTML に入らず、LCP が悪化した（Lighthouse）。HTML の画像には、`width`・`height` を付けて、読み込み時のレイアウトのずれ（CLS）を防いでいる。
 
-- 最近書いたブログ: `snippets/recent-posts.jsx` の `RecentPosts` を使い、4件を2列の画像付きカードで載せる。標準の `Card` ではなく自作にしているのは、画像に `width`・`height` を付けて、読み込み時のレイアウトのずれ（CLS）を防ぐため。ブログのエントリを足したら、新しい順の上位4件になるよう、`posts` の `date`（`YYYY/MM/DD`）・`source`（掲載元）・`title`・`img`・`href` を差し替える。値は、一覧（`blog/index.mdx`）の Card と同じ。
-- 登壇予定: `snippets/upcoming-talks.jsx` の `UpcomingTalks` を使う。`talks` に、`date`（`YYYY/MM/DD`）・`title`・`img`・`href` を並べると、サイトを開いた日以降（当日を含む）の登壇だけが、ブラウザ側で表示される。1件ごとに、左にサムネイル・右に文字の、幅いっぱいの横長カードで出す（1件でもスカスカに見えないように。画面が狭いときは縦に積む）。開催日が過ぎたものは自動で消え、1件もなければ「現在、公開している登壇予定はありません。」が出る。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも足す（過ぎたものは消さなくてよいが、溜まったら消す）。
+- 最近書いたブログ: 4件を、2列の画像付きカード（`<a>` と `<img>`）で載せる。Blog のエントリを足したら、新しい順の上位4件になるよう、`<a>` を差し替える。`href`・`img`・タイトルは、一覧（`blog/index.mdx`）の Card と同じ。日付と掲載元は `YYYY/MM/DD`・`note` のように、下に書く。画像は `loading="lazy"`。
+- 登壇予定: `<div data-upcoming-talks>` の中に、`<a data-talk-date="YYYY/MM/DD">` のカードを並べる。ルートの `upcoming-talks.js`（全ページに読み込まれる）が、サイトを開いた日より前の `data-talk-date` のカードを隠し、1件も残らなければ、`data-upcoming-empty` の「現在、公開している登壇予定はありません。」を出す。サイトは静的なので、再ビルドしなくても、開催日が過ぎたカードは、自動で消える（日付単位。当日は表示）。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも `<a>` を足す。過ぎたものは、消さなくてもよいが、溜まったら消す。先頭のカードの画像だけ `fetchPriority="high"`（LCP の画像）。
 - 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / Career / Work with me）。
 - SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 
