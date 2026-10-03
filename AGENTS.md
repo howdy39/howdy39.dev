@@ -37,18 +37,30 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
      会社のブログに載った記事は、掲載元を `STORES note`（note.st.inc）や `STORES Product Blog`（product.st.inc）にする。ファイル名の掲載元の部分は `stores-note` / `stores-product-blog`。Card の本文も同じ名前。インタビューなど、自分が載っている記事も、同じ形で足す。
 2. `docs.json` の `ja` の、`Blog › YYYY/MM` というグループ（なければ新しく作る。`navigation` の直下に、新しい月が上になるよう並べる）に、ページを追加する（掲載元ごとには分けない）。これらのグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog › 2025/08` と出る。グループを入れ子にして「Blog」を上の段に置くと、検索画面は、語によって上の段を省略する（月しか出ない）ので、名前に「Blog › 」を含めた1段のグループにしている。
-3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
+3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。既存のブロックを1つ、まるごとコピーして、日付・タグ・リンク・画像・タイトル・掲載元を直すのが確実。
 
    ```
    <Update label="YYYY/MM/DD" tags={["GAS", "AI"]}>
-     <Card title="タイトル" img="OGP画像のURL" href="元記事のURL">
-       note
-     </Card>
+     <div className="not-prose">
+       <a href="元記事のURL" className="group flex flex-col overflow-hidden rounded-2xl border …">
+         <img src="OGP画像のURL" alt="" width="1200" height="630" loading="lazy" decoding="async" className="w-full m-0 object-cover" style={{ aspectRatio: "1200 / 630" }} />
+         <div className="flex items-start justify-between gap-3 p-4">
+           <div className="min-w-0">
+             <div className="font-semibold text-base text-gray-800 dark:text-white">タイトル</div>
+             <div className="mt-1 text-gray-500 dark:text-gray-400">note</div>
+           </div>
+           <span aria-hidden="true" className="…">↗</span>
+         </div>
+       </a>
+     </div>
    </Update>
    ```
 
+   - 標準の `Card` ではなく、自作の HTML のカードにしている。画像に `width`・`height` と `loading="lazy"` を付けて、読み込み時のレイアウトのずれ（CLS）と、画面外の画像の先読みを防ぐため（記事が160件を超え、`Card` のままだと、ページの転送量が約9MB になった）。
+   - 新しい順の先頭4件だけは、`loading="lazy"` を付けず、先頭2件に `fetchPriority="high"` を付ける（LCP の画像）。追加して先頭からはみ出した記事は、`loading="lazy"` にする。
    - `tags` はトピックだけ。掲載元は入れない（タグは OR 選択で、掲載元での絞り込みに意味がないため）。
-   - Card の本文は掲載元の名前。
+   - カードの下の行は掲載元の名前。
+   - タイトルに `{` `}` を含むときは、`&#123;` `&#125;` と書く。
    - OGP 画像は、元記事の `og:image` の URL をそのまま使う。
 4. 英語版も作る。`llms.txt` は、既定の言語（日本語）のページだけが本体で、英語は別の索引（`/_llms/en.md`）になるので、英語のページがないと、英語の AI や検索から記事が見つからない。
    - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
@@ -112,7 +124,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 ## ホームの「同人誌（無料公開）」
 
-`ja/index.mdx` と `en/index.mdx` の、経歴の前に、サークル「Tech The Toaster」の電子書籍4冊（すべて無料。ショップ: https://techthetoaster.stores.jp/ ）を、表紙付きのカードで載せている。画像はショップの URL（`imagedelivery.net`）で、`width`・`height` を付けている。書籍が増えたら、カードを足す（日本語版と英語版の両方）。
+`ja/index.mdx` と `en/index.mdx` の、経歴の前に、サークル「Tech The Toaster」の電子書籍4冊（すべて無料。ショップ: https://techthetoaster.stores.jp/ ）を、表紙付きのカードで載せている。画像はショップの URL（`imagedelivery.net`、`fit=scale-down,w=460` で、元の比率の 460×650）で、`width`・`height` を付けている。`fit=cover` で切り抜くと、表紙の上下が切れる。書籍が増えたら、カードを足す（日本語版と英語版の両方）。
 
 ## 経歴の「主な取り組み」
 
