@@ -1,4 +1,4 @@
-/* Sidebar: list only the top-level pages. The Blog posts live in the last
+/* Sidebar: list only the top-level pages. The Blog posts (group "Blog") live in the last
    navigation group (so they are in search and llms.txt) and are not shown. */
 #navigation-items > div {
   display: none;
