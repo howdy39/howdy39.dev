@@ -102,7 +102,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 `ja/index.mdx` と `en/index.mdx` の先頭に、最新の Blog 2件と Speaking 2件を、セクションを縦に並べ、各2枚を横並び（`CardGroup`）の画像付き Card で載せている（自動では更新されない）。
 Blog や Speaking のエントリを足したら、新しい順の上位2件になるよう、ホームの Card も差し替える。
-見出し（`## Recent Blog` など）は、右側の目次に出すため `##` にしている。SNS のリンクは、サブタイトルの下のアイコンの行。
+見出し（`## Recent Blog` など）は、右側の目次に出すため `##` にしている。SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。ホームのサブタイトルの下には、アバター（`images/avatar.png`）だけがある。
 Card は、一覧（`blog/index.mdx`・`speaking.mdx`）と同じ `title`・`img`・`href` を使い、本文は `YYYY/MM/DD · 掲載元（または役割）`。
 
 ## 注意

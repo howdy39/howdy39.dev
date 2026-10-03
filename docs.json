@@ -6,6 +6,30 @@
     "primary": "#0EA5E9"
   },
   "favicon": "/images/avatar.png",
+  "navbar": {
+    "links": [
+      {
+        "label": "X",
+        "icon": "x-twitter",
+        "href": "https://twitter.com/howdy39"
+      },
+      {
+        "label": "Facebook",
+        "icon": "facebook",
+        "href": "https://www.facebook.com/tatsuya.nakano.908"
+      },
+      {
+        "label": "YOUTRUST",
+        "icon": "link",
+        "href": "https://youtrust.jp/users/howdy39"
+      },
+      {
+        "label": "GitHub",
+        "icon": "github",
+        "href": "https://github.com/howdy39"
+      }
+    ]
+  },
   "navigation": {
     "languages": [
       {
