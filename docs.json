@@ -211,9 +211,227 @@
                 ]
               },
               {
+                "group": "2023/12",
+                "pages": [
+                  "ja/blog/2023-12-31-note-2023-review",
+                  "ja/blog/2023-12-28-note-admina-role-account-management",
+                  "ja/blog/2023-12-10-zenn-slack-workflow-emoji-calendar-invite",
+                  "ja/blog/2023-12-04-note-stores-corporate-engineer-hiring"
+                ]
+              },
+              {
+                "group": "2023/11",
+                "pages": [
+                  "ja/blog/2023-11-24-zenn-esa-smart-chip-docs-addon",
+                  "ja/blog/2023-11-08-zenn-slack-workflow-google-meet-url",
+                  "ja/blog/2023-11-05-zenn-gas-addon-domain-distribution"
+                ]
+              },
+              {
+                "group": "2023/10",
+                "pages": [
+                  "ja/blog/2023-10-29-zenn-gas-simple-spreadsheet-addon"
+                ]
+              },
+              {
+                "group": "2023/09",
+                "pages": [
+                  "ja/blog/2023-09-03-zenn-jamf-pro-api-roles-clients"
+                ]
+              },
+              {
+                "group": "2023/08",
+                "pages": [
+                  "ja/blog/2023-08-17-zenn-slack-workflow-simple-ticketing"
+                ]
+              },
+              {
+                "group": "2023/04",
+                "pages": [
+                  "ja/blog/2023-04-30-zenn-gas-export-google-groups-settings",
+                  "ja/blog/2023-04-24-note-chatgpt-internal-assistant-bot",
+                  "ja/blog/2023-04-14-note-gas-internal-training",
+                  "ja/blog/2023-04-03-note-stores-px-advent-calendar-spring"
+                ]
+              },
+              {
+                "group": "2023/03",
+                "pages": [
+                  "ja/blog/2023-03-14-zenn-docsbot-ai-trial"
+                ]
+              },
+              {
+                "group": "2023/01",
+                "pages": [
+                  "ja/blog/2023-01-01-zenn-secure-shared-drive-operation"
+                ]
+              },
+              {
+                "group": "2022/03",
+                "pages": [
+                  "ja/blog/2022-03-07-note-engineer-pc-anytime-replacement"
+                ]
+              },
+              {
+                "group": "2021/12",
+                "pages": [
+                  "ja/blog/2021-12-31-note-2021-review",
+                  "ja/blog/2021-12-06-zenn-google-slides-bingo-card"
+                ]
+              },
+              {
+                "group": "2021/08",
+                "pages": [
+                  "ja/blog/2021-08-22-note-stray-cat-lens-sel85f18",
+                  "ja/blog/2021-08-16-note-software-engineer-to-corporate-engineer",
+                  "ja/blog/2021-08-02-note-reminders"
+                ]
+              },
+              {
+                "group": "2021/07",
+                "pages": [
+                  "ja/blog/2021-07-14-zenn-gas-slack-mention-by-email"
+                ]
+              },
+              {
+                "group": "2021/05",
+                "pages": [
+                  "ja/blog/2021-05-31-note-why-corporate-it-should-not-manage-all-saas"
+                ]
+              },
+              {
+                "group": "2021/02",
+                "pages": [
+                  "ja/blog/2021-02-15-note-hey-corporate-engineer-hiring-2021",
+                  "ja/blog/2021-02-08-note-hey-review-meeting-online-streaming"
+                ]
+              },
+              {
+                "group": "2020/12",
+                "pages": [
+                  "ja/blog/2020-12-31-note-2020-review",
+                  "ja/blog/2020-12-23-note-it-manager-software-engineering-culture"
+                ]
+              },
+              {
+                "group": "2020/07",
+                "pages": [
+                  "ja/blog/2020-07-17-note-hey-it-support-hiring",
+                  "ja/blog/2020-07-03-note-hey-corporate-engineer-hiring-2020"
+                ]
+              },
+              {
+                "group": "2020/03",
+                "pages": [
+                  "ja/blog/2020-03-31-note-job-change-to-corporate-engineer"
+                ]
+              },
+              {
                 "group": "2019/12",
                 "pages": [
+                  "ja/blog/2019-12-31-note-2019-review",
                   "ja/blog/2019-12-23-qiita-nuxt-gas-search"
+                ]
+              },
+              {
+                "group": "2019/11",
+                "pages": [
+                  "ja/blog/2019-11-17-qiita-weekly-kaizen-rotation"
+                ]
+              },
+              {
+                "group": "2019/10",
+                "pages": [
+                  "ja/blog/2019-10-01-note-stores-frontend-development"
+                ]
+              },
+              {
+                "group": "2019/07",
+                "pages": [
+                  "ja/blog/2019-07-23-qiita-google-slides-presentation-techniques"
+                ]
+              },
+              {
+                "group": "2019/04",
+                "pages": [
+                  "ja/blog/2019-04-14-note-tech-book-fest-6"
+                ]
+              },
+              {
+                "group": "2018/12",
+                "pages": [
+                  "ja/blog/2018-12-30-qiita-nuxt-youtube-player",
+                  "ja/blog/2018-12-30-note-2018-review",
+                  "ja/blog/2018-12-25-qiita-nuxt-user-agent-plugins",
+                  "ja/blog/2018-12-24-qiita-vue-prevent-click-directive",
+                  "ja/blog/2018-12-24-qiita-nuxt-block-direct-access-middleware",
+                  "ja/blog/2018-12-15-qiita-mouse-hover-display-tricks",
+                  "ja/blog/2018-12-09-qiita-nuxt-netlify-firebase-tech-choices",
+                  "ja/blog/2018-12-08-note-nuxt-meetup-6"
+                ]
+              },
+              {
+                "group": "2018/11",
+                "pages": [
+                  "ja/blog/2018-11-18-qiita-nuxt-elementui-storybook-setup",
+                  "ja/blog/2018-11-04-qiita-vue-css-transition-step-by-step"
+                ]
+              },
+              {
+                "group": "2018/10",
+                "pages": [
+                  "ja/blog/2018-10-31-note-stores-one-month-impressions",
+                  "ja/blog/2018-10-14-note-chrome-devtools-book-sales-tech-book-fest-5"
+                ]
+              },
+              {
+                "group": "2018/09",
+                "pages": [
+                  "ja/blog/2018-09-21-note-chrome-devtools-book-story",
+                  "ja/blog/2018-09-13-qiita-chrome-custom-object-formatters"
+                ]
+              },
+              {
+                "group": "2018/08",
+                "pages": [
+                  "ja/blog/2018-08-21-qiita-cloud-functions-puppeteer-gas-scraping"
+                ]
+              },
+              {
+                "group": "2018/07",
+                "pages": [
+                  "ja/blog/2018-07-29-qiita-spreadsheet-web-api-service"
+                ]
+              },
+              {
+                "group": "2018/05",
+                "pages": [
+                  "ja/blog/2018-05-20-qiita-chrome-devtools-console"
+                ]
+              },
+              {
+                "group": "2018/04",
+                "pages": [
+                  "ja/blog/2018-04-13-qiita-sheets-macros"
+                ]
+              },
+              {
+                "group": "2018/03",
+                "pages": [
+                  "ja/blog/2018-03-22-qiita-gas-deploy-circleci",
+                  "ja/blog/2018-03-19-qiita-gas-clasp-starter"
+                ]
+              },
+              {
+                "group": "2018/02",
+                "pages": [
+                  "ja/blog/2018-02-28-qiita-gas-calendar-event-triggers"
+                ]
+              },
+              {
+                "group": "2018/01",
+                "pages": [
+                  "ja/blog/2018-01-12-qiita-app-maker-apps-script-dashboard"
                 ]
               }
             ]
@@ -507,9 +725,227 @@
                 ]
               },
               {
+                "group": "2023/12",
+                "pages": [
+                  "en/blog/2023-12-31-note-2023-review",
+                  "en/blog/2023-12-28-note-admina-role-account-management",
+                  "en/blog/2023-12-10-zenn-slack-workflow-emoji-calendar-invite",
+                  "en/blog/2023-12-04-note-stores-corporate-engineer-hiring"
+                ]
+              },
+              {
+                "group": "2023/11",
+                "pages": [
+                  "en/blog/2023-11-24-zenn-esa-smart-chip-docs-addon",
+                  "en/blog/2023-11-08-zenn-slack-workflow-google-meet-url",
+                  "en/blog/2023-11-05-zenn-gas-addon-domain-distribution"
+                ]
+              },
+              {
+                "group": "2023/10",
+                "pages": [
+                  "en/blog/2023-10-29-zenn-gas-simple-spreadsheet-addon"
+                ]
+              },
+              {
+                "group": "2023/09",
+                "pages": [
+                  "en/blog/2023-09-03-zenn-jamf-pro-api-roles-clients"
+                ]
+              },
+              {
+                "group": "2023/08",
+                "pages": [
+                  "en/blog/2023-08-17-zenn-slack-workflow-simple-ticketing"
+                ]
+              },
+              {
+                "group": "2023/04",
+                "pages": [
+                  "en/blog/2023-04-30-zenn-gas-export-google-groups-settings",
+                  "en/blog/2023-04-24-note-chatgpt-internal-assistant-bot",
+                  "en/blog/2023-04-14-note-gas-internal-training",
+                  "en/blog/2023-04-03-note-stores-px-advent-calendar-spring"
+                ]
+              },
+              {
+                "group": "2023/03",
+                "pages": [
+                  "en/blog/2023-03-14-zenn-docsbot-ai-trial"
+                ]
+              },
+              {
+                "group": "2023/01",
+                "pages": [
+                  "en/blog/2023-01-01-zenn-secure-shared-drive-operation"
+                ]
+              },
+              {
+                "group": "2022/03",
+                "pages": [
+                  "en/blog/2022-03-07-note-engineer-pc-anytime-replacement"
+                ]
+              },
+              {
+                "group": "2021/12",
+                "pages": [
+                  "en/blog/2021-12-31-note-2021-review",
+                  "en/blog/2021-12-06-zenn-google-slides-bingo-card"
+                ]
+              },
+              {
+                "group": "2021/08",
+                "pages": [
+                  "en/blog/2021-08-22-note-stray-cat-lens-sel85f18",
+                  "en/blog/2021-08-16-note-software-engineer-to-corporate-engineer",
+                  "en/blog/2021-08-02-note-reminders"
+                ]
+              },
+              {
+                "group": "2021/07",
+                "pages": [
+                  "en/blog/2021-07-14-zenn-gas-slack-mention-by-email"
+                ]
+              },
+              {
+                "group": "2021/05",
+                "pages": [
+                  "en/blog/2021-05-31-note-why-corporate-it-should-not-manage-all-saas"
+                ]
+              },
+              {
+                "group": "2021/02",
+                "pages": [
+                  "en/blog/2021-02-15-note-hey-corporate-engineer-hiring-2021",
+                  "en/blog/2021-02-08-note-hey-review-meeting-online-streaming"
+                ]
+              },
+              {
+                "group": "2020/12",
+                "pages": [
+                  "en/blog/2020-12-31-note-2020-review",
+                  "en/blog/2020-12-23-note-it-manager-software-engineering-culture"
+                ]
+              },
+              {
+                "group": "2020/07",
+                "pages": [
+                  "en/blog/2020-07-17-note-hey-it-support-hiring",
+                  "en/blog/2020-07-03-note-hey-corporate-engineer-hiring-2020"
+                ]
+              },
+              {
+                "group": "2020/03",
+                "pages": [
+                  "en/blog/2020-03-31-note-job-change-to-corporate-engineer"
+                ]
+              },
+              {
                 "group": "2019/12",
                 "pages": [
+                  "en/blog/2019-12-31-note-2019-review",
                   "en/blog/2019-12-23-qiita-nuxt-gas-search"
+                ]
+              },
+              {
+                "group": "2019/11",
+                "pages": [
+                  "en/blog/2019-11-17-qiita-weekly-kaizen-rotation"
+                ]
+              },
+              {
+                "group": "2019/10",
+                "pages": [
+                  "en/blog/2019-10-01-note-stores-frontend-development"
+                ]
+              },
+              {
+                "group": "2019/07",
+                "pages": [
+                  "en/blog/2019-07-23-qiita-google-slides-presentation-techniques"
+                ]
+              },
+              {
+                "group": "2019/04",
+                "pages": [
+                  "en/blog/2019-04-14-note-tech-book-fest-6"
+                ]
+              },
+              {
+                "group": "2018/12",
+                "pages": [
+                  "en/blog/2018-12-30-qiita-nuxt-youtube-player",
+                  "en/blog/2018-12-30-note-2018-review",
+                  "en/blog/2018-12-25-qiita-nuxt-user-agent-plugins",
+                  "en/blog/2018-12-24-qiita-vue-prevent-click-directive",
+                  "en/blog/2018-12-24-qiita-nuxt-block-direct-access-middleware",
+                  "en/blog/2018-12-15-qiita-mouse-hover-display-tricks",
+                  "en/blog/2018-12-09-qiita-nuxt-netlify-firebase-tech-choices",
+                  "en/blog/2018-12-08-note-nuxt-meetup-6"
+                ]
+              },
+              {
+                "group": "2018/11",
+                "pages": [
+                  "en/blog/2018-11-18-qiita-nuxt-elementui-storybook-setup",
+                  "en/blog/2018-11-04-qiita-vue-css-transition-step-by-step"
+                ]
+              },
+              {
+                "group": "2018/10",
+                "pages": [
+                  "en/blog/2018-10-31-note-stores-one-month-impressions",
+                  "en/blog/2018-10-14-note-chrome-devtools-book-sales-tech-book-fest-5"
+                ]
+              },
+              {
+                "group": "2018/09",
+                "pages": [
+                  "en/blog/2018-09-21-note-chrome-devtools-book-story",
+                  "en/blog/2018-09-13-qiita-chrome-custom-object-formatters"
+                ]
+              },
+              {
+                "group": "2018/08",
+                "pages": [
+                  "en/blog/2018-08-21-qiita-cloud-functions-puppeteer-gas-scraping"
+                ]
+              },
+              {
+                "group": "2018/07",
+                "pages": [
+                  "en/blog/2018-07-29-qiita-spreadsheet-web-api-service"
+                ]
+              },
+              {
+                "group": "2018/05",
+                "pages": [
+                  "en/blog/2018-05-20-qiita-chrome-devtools-console"
+                ]
+              },
+              {
+                "group": "2018/04",
+                "pages": [
+                  "en/blog/2018-04-13-qiita-sheets-macros"
+                ]
+              },
+              {
+                "group": "2018/03",
+                "pages": [
+                  "en/blog/2018-03-22-qiita-gas-deploy-circleci",
+                  "en/blog/2018-03-19-qiita-gas-clasp-starter"
+                ]
+              },
+              {
+                "group": "2018/02",
+                "pages": [
+                  "en/blog/2018-02-28-qiita-gas-calendar-event-triggers"
+                ]
+              },
+              {
+                "group": "2018/01",
+                "pages": [
+                  "en/blog/2018-01-12-qiita-app-maker-apps-script-dashboard"
                 ]
               }
             ]
