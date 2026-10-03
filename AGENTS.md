@@ -1,6 +1,6 @@
 # howdy39.dev
 
-Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy39.github.io` からの移行先。
+Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howdy39.github.io` からの移行先。
 
 ## 開発
 
@@ -12,8 +12,8 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
 ## 構成
 
-- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。Archive は、日本語版への案内だけ。
-- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Archive の4項目だけを出す。
+- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
+- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking の3項目だけを出す。
 - ページは `ja/` `en/` の下に置く。内部リンクは `/ja/...` のようにパス付きで書く。
 
 ## Blog の記事の追加
