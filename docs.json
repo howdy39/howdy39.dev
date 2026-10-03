@@ -50,7 +50,7 @@
             "group": "Blog",
             "pages": [
               {
-                "group": "note",
+                "group": "Blog / note",
                 "pages": [
                   {
                     "group": "2026/09",
@@ -298,7 +298,7 @@
                 ]
               },
               {
-                "group": "Zenn",
+                "group": "Blog / Zenn",
                 "pages": [
                   {
                     "group": "2026/04",
@@ -402,7 +402,7 @@
                 ]
               },
               {
-                "group": "Qiita",
+                "group": "Blog / Qiita",
                 "pages": [
                   {
                     "group": "2019/12",
@@ -492,7 +492,7 @@
                 ]
               },
               {
-                "group": "STORES note",
+                "group": "Blog / STORES note",
                 "pages": [
                   {
                     "group": "2024/12",
@@ -509,7 +509,7 @@
                 ]
               },
               {
-                "group": "STORES Product Blog",
+                "group": "Blog / STORES Product Blog",
                 "pages": [
                   {
                     "group": "2025/05",
@@ -659,7 +659,7 @@
             "group": "Blog",
             "pages": [
               {
-                "group": "note",
+                "group": "Blog / note",
                 "pages": [
                   {
                     "group": "2026/09",
@@ -907,7 +907,7 @@
                 ]
               },
               {
-                "group": "Zenn",
+                "group": "Blog / Zenn",
                 "pages": [
                   {
                     "group": "2026/04",
@@ -1011,7 +1011,7 @@
                 ]
               },
               {
-                "group": "Qiita",
+                "group": "Blog / Qiita",
                 "pages": [
                   {
                     "group": "2019/12",
@@ -1101,7 +1101,7 @@
                 ]
               },
               {
-                "group": "STORES note",
+                "group": "Blog / STORES note",
                 "pages": [
                   {
                     "group": "2024/12",
@@ -1118,7 +1118,7 @@
                 ]
               },
               {
-                "group": "STORES Product Blog",
+                "group": "Blog / STORES Product Blog",
                 "pages": [
                   {
                     "group": "2025/05",

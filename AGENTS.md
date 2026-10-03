@@ -36,7 +36,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - `description`: 著者が自分で紹介する口調（です・ます調、主語は省く）で、150〜200字ほど。記事に書いていない感想は足さない。`llms.txt` と検索に使われる。
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
      会社のブログに載った記事は、掲載元を `STORES note`（note.st.inc）や `STORES Product Blog`（product.st.inc）にする。ファイル名の掲載元の部分は `stores-note` / `stores-product-blog`。Card の本文も同じ名前。インタビューなど、自分が載っている記事も、同じ形で足す。
-2. `docs.json` の `ja` の「Blog」グループにある、掲載元（`tag` と同じ名前: `note` / `Zenn` / `Qiita` / `STORES note` / `STORES Product Blog`）のグループの中の、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog › Qiita › 2018/01` のように、グループの名前が出る。
+2. `docs.json` の `ja` の「Blog」グループにある、掲載元のグループ（`Blog / note` / `Blog / Zenn` / `Blog / Qiita` / `Blog / STORES note` / `Blog / STORES Product Blog`。検索画面には、一番上のグループは出ず、下の2段だけが出るので、「Blog /」を名前に含めている）の中の、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog / Qiita › 2018/01` のように、掲載元と月が出る。
 3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
 
    ```
