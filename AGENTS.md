@@ -105,7 +105,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 `ja/index.mdx` と `en/index.mdx` の先頭に、登壇予定と、最近書いたブログ4件を、この順に、セクションを縦に並べて載せている（自動では更新されない）。
 
 - 最近書いたブログ: 2列（`CardGroup`）の画像付き Card を4枚載せる。Blog のエントリを足したら、新しい順の上位4件になるよう、ホームの Card も差し替える。Card は、一覧（`blog/index.mdx`）と同じ `title`・`img`・`href` を使い、本文は `YYYY/MM/DD · 掲載元`。
-- 登壇予定: `snippets/upcoming-talks.jsx` の `UpcomingTalks` を使う。`talks` に、`date`（`YYYY/MM/DD`）・`title`・`img`・`href` を並べると、サイトを開いた日以降（当日を含む）の登壇だけが、ブラウザ側で表示される。開催日が過ぎたものは自動で消え、1件もなければ「現在、公開している登壇予定はありません。」が出る。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも足す（過ぎたものは消さなくてよいが、溜まったら消す）。
+- 登壇予定: `snippets/upcoming-talks.jsx` の `UpcomingTalks` を使う。`talks` に、`date`（`YYYY/MM/DD`）・`title`・`img`・`href` を並べると、サイトを開いた日以降（当日を含む）の登壇だけが、ブラウザ側で表示される。1件ごとに、左にサムネイル・右に文字の、幅いっぱいの横長カードで出す（1件でもスカスカに見えないように。画面が狭いときは縦に積む）。開催日が過ぎたものは自動で消え、1件もなければ「現在、公開している登壇予定はありません。」が出る。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも足す（過ぎたものは消さなくてよいが、溜まったら消す）。
 - 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / Career / Work with me）。
 - SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 
