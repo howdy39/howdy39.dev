@@ -7,7 +7,8 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 - Node 22 が必要。`.node-version` で固定している（nodenv）。Node 25 では `mint` が動かない。
 - プレビュー: `nodenv exec npx mint dev`（http://localhost:3000）
 - 検証: `mint validate` と `mint broken-links`
-- コミットは Conventional Commits 形式。
+- コミットは Conventional Commits 形式。作業の区切りごとに、確認を待たずにコミットしてよい。
+- push は、本番（`*.mintlify.site`）で確認したいときだけ行う。毎回は push しない。
 
 ## 構成
 
