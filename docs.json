@@ -9,6 +9,7 @@
     "languages": [
       {
         "language": "ja",
+        "default": true,
         "tabs": [
           {
             "tab": "Home",
@@ -21,6 +22,23 @@
           {
             "tab": "Archive",
             "pages": ["ja/archive"]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Home",
+            "pages": ["en/index"]
+          },
+          {
+            "tab": "Blog",
+            "pages": ["en/blog/index"]
+          },
+          {
+            "tab": "Archive",
+            "pages": ["en/archive"]
           }
         ]
       }
