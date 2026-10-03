@@ -11,7 +11,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
 ## 構成
 
-- `ja/` が既定の言語、`en/` は Home だけ英訳して、Blog と Archive は日本語版への案内。
+- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。Archive は、日本語版への案内だけ。
 - `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Archive の4項目だけを出す。
 - ページは `ja/` `en/` の下に置く。内部リンクは `/ja/...` のようにパス付きで書く。
 
@@ -48,6 +48,11 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
    - `tags` はトピックだけ。掲載元は入れない（タグは OR 選択で、掲載元での絞り込みに意味がないため）。
    - Card の本文は掲載元の名前。
    - OGP 画像は、元記事の `og:image` の URL をそのまま使う。
+4. 英語版も作る。`llms.txt` は、既定の言語（日本語）のページだけが本体で、英語は別の索引（`/_llms/en.md`）になるので、英語のページがないと、英語の AI や検索から記事が見つからない。
+   - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
+   - `docs.json` の `en` の「Blog posts」グループ（年ごとのグループ）に、同じ順でページを追加する。
+   - `en/blog/index.mdx` に、同じ `Update` ブロックを追加する。タイトルとタグだけ英訳し、日付・画像・リンクは同じにする。
+   - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）
 
 ## トピックのタグ
 
