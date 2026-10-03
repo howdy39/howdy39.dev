@@ -17,7 +17,12 @@
           },
           {
             "tab": "Blog",
-            "pages": ["ja/blog/index", "ja/blog/zenn-vertex-ai"]
+            "pages": [
+              "ja/blog/index",
+              "ja/blog/2026-09-07-note-colonoscopy",
+              "ja/blog/2026-04-29-zenn-gas-vertex-ai",
+              "ja/blog/2019-12-23-qiita-nuxt-gas-search"
+            ]
           },
           {
             "tab": "Archive",
