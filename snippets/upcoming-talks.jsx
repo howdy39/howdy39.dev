@@ -24,7 +24,6 @@ export const UpcomingTalks = ({ talks, role, cta, empty }) => {
         <a
           key={t.href}
           href={t.href}
-          style={{ borderBottom: "none" }}
           className="group flex flex-col sm:flex-row sm:items-center gap-4 p-4 rounded-2xl border border-gray-950/10 dark:border-white/10 hover:border-primary dark:hover:border-primary-light transition-colors"
         >
           {t.img ? (
