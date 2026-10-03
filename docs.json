@@ -12,9 +12,6 @@
     "light": "#4ADE80",
     "dark": "#16A34A"
   },
-  "background": {
-    "decoration": "gradient"
-  },
   "favicon": "/images/avatar.png",
   "navbar": {
     "links": [
