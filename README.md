@@ -6,7 +6,6 @@ Personal site and blog of howdy39 (Tatsuya Nakano), built with Mintlify.
 ## サイト
 
 - <https://howdy39.dev/>（日本語 `/ja`、英語 `/en`）
-- <https://howdy39-dev.mintlify.site/ja>（Mintlify の URL）
 
 ## 中身
 
