@@ -439,6 +439,165 @@
             ]
           },
           {
+            "group": "Blog › 2017/12",
+            "pages": [
+              "ja/blog/2017-12-30-qiita-gas-stackdriver-logging",
+              "ja/blog/2017-12-29-qiita-app-maker-apploader",
+              "ja/blog/2017-12-28-qiita-app-maker-popup",
+              "ja/blog/2017-12-27-qiita-app-maker-resources",
+              "ja/blog/2017-12-26-qiita-app-maker-transformers",
+              "ja/blog/2017-12-26-qiita-app-maker-calculated-model",
+              "ja/blog/2017-12-25-qiita-app-maker-owner-editor-publish",
+              "ja/blog/2017-12-25-qiita-app-maker-embed-app",
+              "ja/blog/2017-12-24-qiita-app-maker-roles",
+              "ja/blog/2017-12-24-qiita-app-maker-execution-account",
+              "ja/blog/2017-12-12-qiita-app-maker-default-actions",
+              "ja/blog/2017-12-01-qiita-app-maker-2017-review"
+            ]
+          },
+          {
+            "group": "Blog › 2017/11",
+            "pages": [
+              "ja/blog/2017-11-12-qiita-app-maker-drive-tables-backup"
+            ]
+          },
+          {
+            "group": "Blog › 2017/10",
+            "pages": [
+              "ja/blog/2017-10-03-qiita-app-maker-japanese-search",
+              "ja/blog/2017-10-02-qiita-app-maker-get-current-url"
+            ]
+          },
+          {
+            "group": "Blog › 2017/09",
+            "pages": [
+              "ja/blog/2017-09-27-qiita-cloud-translation-api-points",
+              "ja/blog/2017-09-25-qiita-chrome-extension-context-menu",
+              "ja/blog/2017-09-17-qiita-app-maker-pagefragment-instance",
+              "ja/blog/2017-09-11-qiita-app-maker-url-parameters",
+              "ja/blog/2017-09-08-qiita-app-maker-query-techniques"
+            ]
+          },
+          {
+            "group": "Blog › 2017/08",
+            "pages": [
+              "ja/blog/2017-08-31-qiita-app-maker-drive-tables-data-import",
+              "ja/blog/2017-08-28-qiita-app-maker-environments"
+            ]
+          },
+          {
+            "group": "Blog › 2017/07",
+            "pages": [
+              "ja/blog/2017-07-26-qiita-google-domains-gsuite-custom-email",
+              "ja/blog/2017-07-06-qiita-jsonnet-vscode",
+              "ja/blog/2017-07-02-qiita-gas-code-completion"
+            ]
+          },
+          {
+            "group": "Blog › 2017/06",
+            "pages": [
+              "ja/blog/2017-06-25-qiita-gas-logging-design",
+              "ja/blog/2017-06-14-qiita-sheets-api-write-cells",
+              "ja/blog/2017-06-03-qiita-sheets-api-read-cells"
+            ]
+          },
+          {
+            "group": "Blog › 2017/05",
+            "pages": [
+              "ja/blog/2017-05-30-qiita-postman-oauth-google-api",
+              "ja/blog/2017-05-28-qiita-gas-custom-menu",
+              "ja/blog/2017-05-18-qiita-sheets-api-speedup",
+              "ja/blog/2017-05-07-qiita-google-classroom-public"
+            ]
+          },
+          {
+            "group": "Blog › 2017/03",
+            "pages": [
+              "ja/blog/2017-03-09-qiita-video-intelligence-api-demo"
+            ]
+          },
+          {
+            "group": "Blog › 2017/02",
+            "pages": [
+              "ja/blog/2017-02-01-qiita-github-topics"
+            ]
+          },
+          {
+            "group": "Blog › 2017/01",
+            "pages": [
+              "ja/blog/2017-01-09-qiita-qiita-chrome-extension-q-accelerator"
+            ]
+          },
+          {
+            "group": "Blog › 2016/11",
+            "pages": [
+              "ja/blog/2016-11-28-qiita-eslint-step-by-step",
+              "ja/blog/2016-11-14-qiita-google-slides-api-first-look"
+            ]
+          },
+          {
+            "group": "Blog › 2016/10",
+            "pages": [
+              "ja/blog/2016-10-03-qiita-javascript-prototype-chain"
+            ]
+          },
+          {
+            "group": "Blog › 2016/09",
+            "pages": [
+              "ja/blog/2016-09-20-qiita-chrome-extension-falcon",
+              "ja/blog/2016-09-15-qiita-granim-js-gradient-animation",
+              "ja/blog/2016-09-08-qiita-cssnext-next-generation-css",
+              "ja/blog/2016-09-05-qiita-postcss-step-by-step"
+            ]
+          },
+          {
+            "group": "Blog › 2016/08",
+            "pages": [
+              "ja/blog/2016-08-08-qiita-webpack-step-by-step"
+            ]
+          },
+          {
+            "group": "Blog › 2016/07",
+            "pages": [
+              "ja/blog/2016-07-21-qiita-google-cloud-natural-language-api",
+              "ja/blog/2016-07-19-qiita-google-web-api-design-vs-best-practices",
+              "ja/blog/2016-07-13-qiita-gmail-api-settings-endpoints"
+            ]
+          },
+          {
+            "group": "Blog › 2016/06",
+            "pages": [
+              "ja/blog/2016-06-30-qiita-draw-gopher-in-google-sheets-with-go",
+              "ja/blog/2016-06-08-qiita-google-picker-ux"
+            ]
+          },
+          {
+            "group": "Blog › 2016/05",
+            "pages": [
+              "ja/blog/2016-05-22-qiita-google-sheets-api-intro",
+              "ja/blog/2016-05-16-qiita-karma-step-by-step"
+            ]
+          },
+          {
+            "group": "Blog › 2016/04",
+            "pages": [
+              "ja/blog/2016-04-27-qiita-frontend-testing-introduction"
+            ]
+          },
+          {
+            "group": "Blog › 2016/03",
+            "pages": [
+              "ja/blog/2016-03-01-qiita-google-people-api"
+            ]
+          },
+          {
+            "group": "Blog › 2016/02",
+            "pages": [
+              "ja/blog/2016-02-09-qiita-speeding-up-google-apis",
+              "ja/blog/2016-02-03-qiita-google-api-batch-request"
+            ]
+          },
+          {
             "group": "Speaking › 2026/11",
             "pages": [
               "ja/talks/2026-11-28-btconjp-sponsor-session"
@@ -945,6 +1104,165 @@
             "group": "Blog › 2018/01",
             "pages": [
               "en/blog/2018-01-12-qiita-app-maker-apps-script-dashboard"
+            ]
+          },
+          {
+            "group": "Blog › 2017/12",
+            "pages": [
+              "en/blog/2017-12-30-qiita-gas-stackdriver-logging",
+              "en/blog/2017-12-29-qiita-app-maker-apploader",
+              "en/blog/2017-12-28-qiita-app-maker-popup",
+              "en/blog/2017-12-27-qiita-app-maker-resources",
+              "en/blog/2017-12-26-qiita-app-maker-transformers",
+              "en/blog/2017-12-26-qiita-app-maker-calculated-model",
+              "en/blog/2017-12-25-qiita-app-maker-owner-editor-publish",
+              "en/blog/2017-12-25-qiita-app-maker-embed-app",
+              "en/blog/2017-12-24-qiita-app-maker-roles",
+              "en/blog/2017-12-24-qiita-app-maker-execution-account",
+              "en/blog/2017-12-12-qiita-app-maker-default-actions",
+              "en/blog/2017-12-01-qiita-app-maker-2017-review"
+            ]
+          },
+          {
+            "group": "Blog › 2017/11",
+            "pages": [
+              "en/blog/2017-11-12-qiita-app-maker-drive-tables-backup"
+            ]
+          },
+          {
+            "group": "Blog › 2017/10",
+            "pages": [
+              "en/blog/2017-10-03-qiita-app-maker-japanese-search",
+              "en/blog/2017-10-02-qiita-app-maker-get-current-url"
+            ]
+          },
+          {
+            "group": "Blog › 2017/09",
+            "pages": [
+              "en/blog/2017-09-27-qiita-cloud-translation-api-points",
+              "en/blog/2017-09-25-qiita-chrome-extension-context-menu",
+              "en/blog/2017-09-17-qiita-app-maker-pagefragment-instance",
+              "en/blog/2017-09-11-qiita-app-maker-url-parameters",
+              "en/blog/2017-09-08-qiita-app-maker-query-techniques"
+            ]
+          },
+          {
+            "group": "Blog › 2017/08",
+            "pages": [
+              "en/blog/2017-08-31-qiita-app-maker-drive-tables-data-import",
+              "en/blog/2017-08-28-qiita-app-maker-environments"
+            ]
+          },
+          {
+            "group": "Blog › 2017/07",
+            "pages": [
+              "en/blog/2017-07-26-qiita-google-domains-gsuite-custom-email",
+              "en/blog/2017-07-06-qiita-jsonnet-vscode",
+              "en/blog/2017-07-02-qiita-gas-code-completion"
+            ]
+          },
+          {
+            "group": "Blog › 2017/06",
+            "pages": [
+              "en/blog/2017-06-25-qiita-gas-logging-design",
+              "en/blog/2017-06-14-qiita-sheets-api-write-cells",
+              "en/blog/2017-06-03-qiita-sheets-api-read-cells"
+            ]
+          },
+          {
+            "group": "Blog › 2017/05",
+            "pages": [
+              "en/blog/2017-05-30-qiita-postman-oauth-google-api",
+              "en/blog/2017-05-28-qiita-gas-custom-menu",
+              "en/blog/2017-05-18-qiita-sheets-api-speedup",
+              "en/blog/2017-05-07-qiita-google-classroom-public"
+            ]
+          },
+          {
+            "group": "Blog › 2017/03",
+            "pages": [
+              "en/blog/2017-03-09-qiita-video-intelligence-api-demo"
+            ]
+          },
+          {
+            "group": "Blog › 2017/02",
+            "pages": [
+              "en/blog/2017-02-01-qiita-github-topics"
+            ]
+          },
+          {
+            "group": "Blog › 2017/01",
+            "pages": [
+              "en/blog/2017-01-09-qiita-qiita-chrome-extension-q-accelerator"
+            ]
+          },
+          {
+            "group": "Blog › 2016/11",
+            "pages": [
+              "en/blog/2016-11-28-qiita-eslint-step-by-step",
+              "en/blog/2016-11-14-qiita-google-slides-api-first-look"
+            ]
+          },
+          {
+            "group": "Blog › 2016/10",
+            "pages": [
+              "en/blog/2016-10-03-qiita-javascript-prototype-chain"
+            ]
+          },
+          {
+            "group": "Blog › 2016/09",
+            "pages": [
+              "en/blog/2016-09-20-qiita-chrome-extension-falcon",
+              "en/blog/2016-09-15-qiita-granim-js-gradient-animation",
+              "en/blog/2016-09-08-qiita-cssnext-next-generation-css",
+              "en/blog/2016-09-05-qiita-postcss-step-by-step"
+            ]
+          },
+          {
+            "group": "Blog › 2016/08",
+            "pages": [
+              "en/blog/2016-08-08-qiita-webpack-step-by-step"
+            ]
+          },
+          {
+            "group": "Blog › 2016/07",
+            "pages": [
+              "en/blog/2016-07-21-qiita-google-cloud-natural-language-api",
+              "en/blog/2016-07-19-qiita-google-web-api-design-vs-best-practices",
+              "en/blog/2016-07-13-qiita-gmail-api-settings-endpoints"
+            ]
+          },
+          {
+            "group": "Blog › 2016/06",
+            "pages": [
+              "en/blog/2016-06-30-qiita-draw-gopher-in-google-sheets-with-go",
+              "en/blog/2016-06-08-qiita-google-picker-ux"
+            ]
+          },
+          {
+            "group": "Blog › 2016/05",
+            "pages": [
+              "en/blog/2016-05-22-qiita-google-sheets-api-intro",
+              "en/blog/2016-05-16-qiita-karma-step-by-step"
+            ]
+          },
+          {
+            "group": "Blog › 2016/04",
+            "pages": [
+              "en/blog/2016-04-27-qiita-frontend-testing-introduction"
+            ]
+          },
+          {
+            "group": "Blog › 2016/03",
+            "pages": [
+              "en/blog/2016-03-01-qiita-google-people-api"
+            ]
+          },
+          {
+            "group": "Blog › 2016/02",
+            "pages": [
+              "en/blog/2016-02-09-qiita-speeding-up-google-apis",
+              "en/blog/2016-02-03-qiita-google-api-batch-request"
             ]
           },
           {
