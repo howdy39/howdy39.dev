@@ -1,0 +1,5 @@
+/* The site is Japanese only, so hide the single-language switcher. */
+#localization-select-trigger,
+[data-component-part="localization-select-trigger"] {
+  display: none;
+}
