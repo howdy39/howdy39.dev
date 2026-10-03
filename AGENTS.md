@@ -36,7 +36,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - `description`: 著者が自分で紹介する口調（です・ます調、主語は省く）で、150〜200字ほど。記事に書いていない感想は足さない。`llms.txt` と検索に使われる。
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
      会社のブログに載った記事は、掲載元を `STORES note`（note.st.inc）や `STORES Product Blog`（product.st.inc）にする。ファイル名の掲載元の部分は `stores-note` / `stores-product-blog`。Card の本文も同じ名前。インタビューなど、自分が載っている記事も、同じ形で足す。
-2. `docs.json` の `ja` の「Blog」グループにある、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する（掲載元ごとには分けない）。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog › 2025/08` のように、月が出る。
+2. `docs.json` の `ja` の、`Blog › YYYY/MM` というグループ（なければ新しく作る。`navigation` の直下に、新しい月が上になるよう並べる）に、ページを追加する（掲載元ごとには分けない）。これらのグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。検索結果には、`Blog › 2025/08` と出る。グループを入れ子にして「Blog」を上の段に置くと、検索画面は、語によって上の段を省略する（月しか出ない）ので、名前に「Blog › 」を含めた1段のグループにしている。
 3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
 
    ```
@@ -52,7 +52,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - OGP 画像は、元記事の `og:image` の URL をそのまま使う。
 4. 英語版も作る。`llms.txt` は、既定の言語（日本語）のページだけが本体で、英語は別の索引（`/_llms/en.md`）になるので、英語のページがないと、英語の AI や検索から記事が見つからない。
    - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
-   - `docs.json` の `en` の「Blog」グループに、同じ月のグループで、ページを追加する。
+   - `docs.json` の `en` の、同じ `Blog › YYYY/MM` のグループに、ページを追加する。
    - `en/blog/index.mdx` に、同じ `Update` ブロックを追加する。タイトルとタグだけ英訳し、日付・画像・リンクは同じにする。
    - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）/ `Front-end`（フロントエンド）/ `Retrospective`（振り返り）
 
@@ -91,7 +91,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    ```
 
    - リンクのないエントリは、`url` を書かず、本文に `YYYY/MM/DD · 役割` と書く。
-3. `docs.json` の `ja` の「Speaking」グループにある、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。
+3. `docs.json` の `ja` の、`Speaking › YYYY/MM` というグループ（なければ新しく作る。Blog の月のグループの後ろに、新しい月が上になるよう並べる）に、ページを追加する。
 4. 英語版も同じ手順で作る（`en/speaking.mdx`、`en/talks/`、`docs.json` の `en`）。`title` は、イベント名の説明部分を英訳し、会社名やイベント名の英語表記が不確かなものは日本語のままにする。`description` は `Month D, YYYY: <title> (<role>).`。
 
 - `tags` は**役割**だけで、1エントリに1つ。Blog のトピックのタグは使わない（フィルターの軸が別）。
@@ -114,7 +114,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - Blog と Speaking の一覧ページ（`ja/blog/index.mdx`・`en/blog/index.mdx`・`ja/speaking.mdx`・`en/speaking.mdx`）は、フロントマターに `searchable: false` を付けている。`Update` の日付（`label`）が、見出しと同じ扱いで、サイト内検索に「2026/04/29」のような結果として出てしまうため。このページは、サイトマップ・Google の索引・`llms.txt` には、そのまま入る。個別の記事のページは、これまでどおり検索に出る。
 
 - `style.css` は次の5つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
-  - サイドバーの「Blog」「Speaking」グループ（`#navigation-items > div`）を隠す。
+  - サイドバーの「Blog › …」「Speaking › …」グループ（`#navigation-items > div`）を隠す。
   - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
   - 外部リンクの Card は右上に矢印が付くので、タイトルが矢印に重ならないよう、タイトルの右に余白を足す（`a:has(> div.absolute) h2`）。
   - 2カラムにした `Update`（Blog、Speaking）で、日付の枠とタグの縦の位置をそろえる（タグの入れ物の上の余白を消す）。
