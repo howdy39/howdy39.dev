@@ -17,7 +17,7 @@
           },
           {
             "tab": "Blog",
-            "pages": ["ja/blog/index"]
+            "pages": ["ja/blog/index", "ja/blog/zenn-vertex-ai"]
           },
           {
             "tab": "Archive",
