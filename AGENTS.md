@@ -54,15 +54,15 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
    - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
    - `docs.json` の `en` の「Blog posts」グループに、同じ月のグループで、ページを追加する。
    - `en/blog/index.mdx` に、同じ `Update` ブロックを追加する。タイトルとタグだけ英訳し、日付・画像・リンクは同じにする。
-   - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）/ `Front-end`（フロントエンド）
+   - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）/ `Front-end`（フロントエンド）/ `Retrospective`（振り返り）
 
 ## トピックのタグ
 
-表記ゆれがあるとフィルターが別のタグに分かれるので、次の表記を使う。1記事に複数付けてよい。
+表記ゆれがあるとフィルターが別のタグに分かれるので、次の表記を使う。1記事に複数付けてよい（年ごとの振り返りは、`エッセイ` と `振り返り` の両方）。
 一覧にないトピックが必要になったら、勝手に足さず、先に相談する。
 一覧のどれにも合わない記事（今は STORES の PX アドベントカレンダーの告知の1件）は、`tags` を付けず、`Update` の `tags` 属性を省略している。
 
-`AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS管理` / `ID` / `セキュリティ` / `情シス` / `マネジメント` / `エッセイ` / `フロントエンド`
+`AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS管理` / `ID` / `セキュリティ` / `情シス` / `マネジメント` / `エッセイ` / `フロントエンド` / `振り返り`
 
 ## Speaking（登壇・メディア掲載・スライド）
 
