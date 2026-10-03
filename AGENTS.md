@@ -98,6 +98,12 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - `スライド` は、Speaker Deck の資料を、1件1エントリで載せるときのタグ。日付は Speaker Deck の公開日、タイトルは資料のタイトル、リンクの文言（`cta`）は `Speaker Deck`。登壇のエントリに、資料のリンクを足す形にはしない。
 - 登壇の「予定」は、専用のタグを作らず、そのまま `登壇` として足す。
 
+## ホームの「Recent Blog」「Recent Speaking」
+
+`ja/index.mdx` と `en/index.mdx` に、最新の Blog 4件と Speaking 4件を `CardGroup` で載せている（自動では更新されない）。
+Blog や Speaking のエントリを足したら、新しい順の上位4件になるよう、ホームの Card も差し替える。
+Card は、一覧（`blog/index.mdx`・`speaking.mdx`）と同じ `title`・`img`・`href` を使い、本文は `YYYY/MM/DD · 掲載元（または役割）`。
+
 ## 注意
 
 - `style.css` は次の2つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
