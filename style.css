@@ -4,6 +4,12 @@
   display: none;
 }
 
+/* Cards that link to another site get an arrow in the top-right corner;
+   keep long titles clear of it. */
+#content a:has(> div.absolute) h2 {
+  padding-right: 1.75rem;
+}
+
 /* Blog index: show Update entries as a compact two-column grid. */
 @media (min-width: 1024px) {
   #content:has(> .update) {

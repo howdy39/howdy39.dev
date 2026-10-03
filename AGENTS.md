@@ -107,7 +107,8 @@ Card は、一覧（`blog/index.mdx`・`speaking.mdx`）と同じ `title`・`img
 
 ## 注意
 
-- `style.css` は次の2つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
+- `style.css` は次の3つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
   - サイドバーの「Blog posts」「Speaking」グループ（`#navigation-items > div`）を隠す。
   - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
+  - 外部リンクの Card は右上に矢印が付くので、タイトルが矢印に重ならないよう、タイトルの右に余白を足す（`a:has(> div.absolute) h2`）。
 - 公開後の `/llms.txt` は CDN にキャッシュされる。最新の中身を見たいときは `/llms.txt?nocache=1` のようにクエリを付ける。
