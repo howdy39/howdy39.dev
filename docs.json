@@ -6,6 +6,19 @@
     "primary": "#0EA5E9"
   },
   "navigation": {
-    "pages": ["index"]
+    "tabs": [
+      {
+        "tab": "Home",
+        "pages": ["index"]
+      },
+      {
+        "tab": "Blog",
+        "pages": ["blog/index"]
+      },
+      {
+        "tab": "Archive",
+        "pages": ["archive"]
+      }
+    ]
   }
 }
