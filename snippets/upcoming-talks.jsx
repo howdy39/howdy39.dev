@@ -30,6 +30,10 @@ export const UpcomingTalks = ({ talks, role, cta, empty }) => {
             <img
               src={t.img}
               alt=""
+              width={1200}
+              height={630}
+              fetchPriority="high"
+              decoding="async"
               className="w-full sm:w-56 sm:shrink-0 rounded-xl m-0"
               style={{ aspectRatio: "1200 / 630", objectFit: "cover" }}
             />
