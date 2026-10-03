@@ -5,6 +5,7 @@ description: "中野 達也（@howdy39）です。Admina エバンジェリス�
 ---
 
 import { UpcomingTalks } from "/snippets/upcoming-talks.jsx";
+import { RecentPosts } from "/snippets/recent-posts.jsx";
 
 ## 登壇予定
 
@@ -26,20 +27,38 @@ import { UpcomingTalks } from "/snippets/upcoming-talks.jsx";
 
 ## 最近書いたブログ
 
-<CardGroup cols={2}>
-  <Card title={"大腸内視鏡検査は正直しんどかったけど、みんな受けた方がいいよという話"} img="https://assets.st-note.com/production/uploads/images/311300814/rectangle_large_type_2_f56ec045c741cc81f8730893ab545562.png?fit=bounds&quality=85&width=1280" href="https://note.com/howdy39/n/n2bab255b5e9e">
-    2026/09/07 · note
-  </Card>
-  <Card title={"感謝をモチベーションにして働くのは悪いことなのか？"} img="https://assets.st-note.com/production/uploads/images/302907886/rectangle_large_type_2_e0aad325d63f29a1d8b479f0cbe75741.png?fit=bounds&quality=85&width=1280" href="https://note.com/howdy39/n/n632396a8ede0">
-    2026/08/13 · note
-  </Card>
-  <Card title={"Claude Code のデフォルトが自動モードになる前に、情シスが決めておきたいこと"} img="https://assets.st-note.com/production/uploads/images/301959923/rectangle_large_type_2_dbb07bfbbdd4fce4fafda8f139736940.png?fit=bounds&quality=85&width=1280" href="https://note.com/howdy39/n/n1a968ae427a9">
-    2026/08/10 · note
-  </Card>
-  <Card title={"整った環境で働き続けるのは本当に良いのかという話"} img="https://assets.st-note.com/production/uploads/images/300486780/rectangle_large_type_2_67e4a76f3b64762f01287277ec4aefa8.png?fit=bounds&quality=85&width=1280" href="https://note.com/howdy39/n/nc2c88a71f933">
-    2026/08/05 · note
-  </Card>
-</CardGroup>
+<RecentPosts
+  posts={[
+    {
+      date: "2026/09/07",
+      source: "note",
+      title: "大腸内視鏡検査は正直しんどかったけど、みんな受けた方がいいよという話",
+      img: "https://assets.st-note.com/production/uploads/images/311300814/rectangle_large_type_2_f56ec045c741cc81f8730893ab545562.png?fit=bounds&quality=85&width=1280",
+      href: "https://note.com/howdy39/n/n2bab255b5e9e",
+    },
+    {
+      date: "2026/08/13",
+      source: "note",
+      title: "感謝をモチベーションにして働くのは悪いことなのか？",
+      img: "https://assets.st-note.com/production/uploads/images/302907886/rectangle_large_type_2_e0aad325d63f29a1d8b479f0cbe75741.png?fit=bounds&quality=85&width=1280",
+      href: "https://note.com/howdy39/n/n632396a8ede0",
+    },
+    {
+      date: "2026/08/10",
+      source: "note",
+      title: "Claude Code のデフォルトが自動モードになる前に、情シスが決めておきたいこと",
+      img: "https://assets.st-note.com/production/uploads/images/301959923/rectangle_large_type_2_dbb07bfbbdd4fce4fafda8f139736940.png?fit=bounds&quality=85&width=1280",
+      href: "https://note.com/howdy39/n/n1a968ae427a9",
+    },
+    {
+      date: "2026/08/05",
+      source: "note",
+      title: "整った環境で働き続けるのは本当に良いのかという話",
+      img: "https://assets.st-note.com/production/uploads/images/300486780/rectangle_large_type_2_67e4a76f3b64762f01287277ec4aefa8.png?fit=bounds&quality=85&width=1280",
+      href: "https://note.com/howdy39/n/nc2c88a71f933",
+    },
+  ]}
+/>
 
 [Blog をすべて見る →](/ja/blog)
 
