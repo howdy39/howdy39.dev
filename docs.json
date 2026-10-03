@@ -52,6 +52,10 @@
             ]
           },
           {
+            "tab": "Speaking",
+            "pages": ["ja/speaking"]
+          },
+          {
             "tab": "Archive",
             "pages": ["ja/archive"]
           }
@@ -67,6 +71,10 @@
           {
             "tab": "Blog",
             "pages": ["en/blog/index"]
+          },
+          {
+            "tab": "Speaking",
+            "pages": ["en/speaking"]
           },
           {
             "tab": "Archive",

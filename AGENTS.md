@@ -56,6 +56,23 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
 `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS管理` / `ID` / `セキュリティ` / `情シス` / `マネジメント` / `エッセイ`
 
+## Speaking（登壇・メディア掲載）
+
+`ja/speaking.mdx` と `en/speaking.mdx` に、`Update` を新しい順で並べる。Blog と違い、1エントリ1ファイルにはしない。
+
+```
+<Update label="YYYY/MM/DD" tags={["登壇"]}>
+  [イベント名](イベントページのURL) / [資料](Speaker DeckのURL)
+</Update>
+```
+
+- 本文は、イベントの正式な名称（主催者とタイトル）をそのまま書く。リンクは、イベントページがあれば付け、資料があれば「/ 資料」で足す。
+- `tags` は**役割**だけで、1エントリに1つ。Blog のトピックのタグは使わない（フィルターの軸が別）。
+  - `登壇`（通常の登壇、ゲスト、パネルなど）/ `基調講演`（キーセッションを含む）/ `LT` / `ファシリテーター` / `外部講師` / `メディア`
+  - 英語版は `Talk` / `Keynote` / `Lightning talk` / `Facilitator` / `Guest lecturer` / `Media`
+- 日本語版と英語版の両方を更新する。英語版は、イベント名の説明部分を英訳し、会社名やイベント名の英語表記が不確かなものは日本語のままにする。
+- 登壇の「予定」は、専用のタグを作らず、そのまま `登壇` として足す。
+
 ## 注意
 
 - `style.css` は、Blog 一覧（`Update`）を2カラムにするためのもの。Mintlify の DOM（`.update`、`#content`）に頼っているので、Mintlify の更新で崩れる可能性がある。
