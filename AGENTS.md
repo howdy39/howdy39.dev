@@ -98,11 +98,11 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - `スライド` は、Speaker Deck の資料を、1件1エントリで載せるときのタグ。日付は Speaker Deck の公開日、タイトルは資料のタイトル、リンクの文言（`cta`）は `Speaker Deck`。登壇のエントリに、資料のリンクを足す形にはしない。
 - 登壇の「予定」は、専用のタグを作らず、そのまま `登壇` として足す。
 
-## ホームの「Recent Blog」「Recent Speaking」
+## ホームの「最新の Blog」「最新の Speaking」
 
 `ja/index.mdx` と `en/index.mdx` の先頭に、最新の Blog 2件と Speaking 2件を、セクションを縦に並べ、各2枚を横並び（`CardGroup`）の画像付き Card で載せている（自動では更新されない）。
 Blog や Speaking のエントリを足したら、新しい順の上位2件になるよう、ホームの Card も差し替える。
-見出し（`## Recent Blog` など）は、右側の目次に出すため `##` にしている。SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
+見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（最新の Blog / 最新の Speaking / 経歴 / お仕事のご依頼）、英語版は英語（Recent Blog / Recent Speaking / Career / Work with me）。SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 Card は、一覧（`blog/index.mdx`・`speaking.mdx`）と同じ `title`・`img`・`href` を使い、本文は `YYYY/MM/DD · 掲載元（または役割）`。
 
 ## 注意
