@@ -8,7 +8,9 @@
     "href": "/"
   },
   "colors": {
-    "primary": "#0EA5E9"
+    "primary": "#16A34A",
+    "light": "#4ADE80",
+    "dark": "#16A34A"
   },
   "background": {
     "decoration": "gradient"
