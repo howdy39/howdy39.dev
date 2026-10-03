@@ -111,9 +111,10 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 ## 注意
 
-- `style.css` は次の4つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
+- `style.css` は次の5つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
   - サイドバーの「Blog posts」「Speaking」グループ（`#navigation-items > div`）を隠す。
   - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
   - 外部リンクの Card は右上に矢印が付くので、タイトルが矢印に重ならないよう、タイトルの右に余白を足す（`a:has(> div.absolute) h2`）。
+  - 2カラムにした `Update`（Blog、Speaking）で、日付の枠とタグの縦の位置をそろえる（タグの入れ物の上の余白を消す）。
   - ホームの経歴の表で、「役割」の列を1行に収め（`white-space: nowrap`、768px 以上）、残りの幅を「技術」の列に回す。
 - 公開後の `/llms.txt` は CDN にキャッシュされる。最新の中身を見たいときは `/llms.txt?nocache=1` のようにクエリを付ける。

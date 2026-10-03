@@ -7,7 +7,7 @@
 /* Cards that link to another site get an arrow in the top-right corner;
    keep long titles clear of it. */
 #content a:has(> div.absolute) h2 {
-  padding-right: 1.75rem;
+  padding-right: 1rem;
 }
 
 /* Career table (home): keep the role column on one line so the tech column
@@ -45,5 +45,11 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  /* The tags keep their top margin from the stacked layout; drop it so they
+     line up with the date chip. */
+  #content:has(> .update) > .update > div:first-child > div.flex-wrap {
+    margin-top: 0;
   }
 }
