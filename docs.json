@@ -12,15 +12,15 @@
         "tabs": [
           {
             "tab": "Home",
-            "pages": ["index"]
+            "pages": ["ja/index"]
           },
           {
             "tab": "Blog",
-            "pages": ["blog/index"]
+            "pages": ["ja/blog/index"]
           },
           {
             "tab": "Archive",
-            "pages": ["archive"]
+            "pages": ["ja/archive"]
           }
         ]
       }
