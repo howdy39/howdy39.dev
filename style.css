@@ -1,4 +1,4 @@
-/* Sidebar: list only the top-level pages. The Blog posts ("Blog / …" groups) and the Speaking talks live in
+/* Sidebar: list only the top-level pages. The Blog posts ("Blog" group) and the Speaking talks live in
    the groups after the top-level pages (so they are in search and llms.txt) and are not shown. */
 #navigation-items > div {
   display: none;
