@@ -19,9 +19,36 @@
             "tab": "Blog",
             "pages": [
               "ja/blog/index",
-              "ja/blog/2026-09-07-note-colonoscopy",
-              "ja/blog/2026-04-29-zenn-gas-vertex-ai",
-              "ja/blog/2019-12-23-qiita-nuxt-gas-search"
+              {
+                "group": "2026",
+                "expanded": true,
+                "pages": [
+                  "ja/blog/2026-09-07-note-colonoscopy",
+                  "ja/blog/2026-08-13-note-gratitude-motivation",
+                  "ja/blog/2026-08-10-note-claude-code-auto-mode",
+                  "ja/blog/2026-08-05-note-comfortable-environment",
+                  "ja/blog/2026-07-09-note-claude-5h-limit",
+                  "ja/blog/2026-07-06-note-backoffice-experience",
+                  "ja/blog/2026-06-18-note-more-headcount-ai",
+                  "ja/blog/2026-05-27-note-leaving-stores",
+                  "ja/blog/2026-04-29-zenn-gas-vertex-ai",
+                  "ja/blog/2026-04-20-note-1password-hosted-provisioning",
+                  "ja/blog/2026-04-03-note-scim-account-deletion",
+                  "ja/blog/2026-03-26-note-youtrust-scout-ai",
+                  "ja/blog/2026-03-12-note-notion-agent-helpdesk",
+                  "ja/blog/2026-02-26-note-who-do-you-work-for",
+                  "ja/blog/2026-02-25-note-notion-custom-agents",
+                  "ja/blog/2026-01-29-note-true-kindness",
+                  "ja/blog/2026-01-11-note-protect-for-now"
+                ]
+              },
+              {
+                "group": "2019",
+                "expanded": false,
+                "pages": [
+                  "ja/blog/2019-12-23-qiita-nuxt-gas-search"
+                ]
+              }
             ]
           },
           {
