@@ -10,6 +10,15 @@
   padding-right: 1.75rem;
 }
 
+/* Career table (home): keep the role column on one line so the tech column
+   gets the leftover width. */
+@media (min-width: 768px) {
+  #content table th:nth-child(3),
+  #content table td:nth-child(3) {
+    white-space: nowrap;
+  }
+}
+
 /* Blog index: show Update entries as a compact two-column grid. */
 @media (min-width: 1024px) {
   #content:has(> .update) {
