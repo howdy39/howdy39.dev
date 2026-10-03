@@ -46,6 +46,7 @@
           "ja/index",
           "ja/blog/index",
           "ja/speaking",
+          "ja/books",
           {
             "group": "Blog › 2026/09",
             "pages": [
@@ -714,6 +715,7 @@
           "en/index",
           "en/blog/index",
           "en/speaking",
+          "en/books",
           {
             "group": "Blog › 2026/09",
             "pages": [

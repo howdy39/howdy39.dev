@@ -12,6 +12,7 @@ Personal site and blog of howdy39 (Tatsuya Nakano), built with Mintlify.
 - **Home**: 自己紹介、登壇予定、最近書いたブログ、経歴、お仕事のご依頼
 - **Blog**: note / Zenn / Qiita などの記事への一覧（外部サイトへのリンクと OGP 画像）
 - **Speaking**: 登壇、メディア掲載、スライド
+- **Books**: 技術同人誌（無料の電子書籍）
 
 日本語（`ja/`）が既定で、英語（`en/`）は翻訳です。
 

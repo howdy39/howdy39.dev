@@ -12,8 +12,8 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 ## 構成
 
-- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
-- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking の3項目だけを出す。
+- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking・Books を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
+- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Books の4項目だけを出す。
 - ページは `ja/` `en/` の下に置く。内部リンクは `/ja/...` のようにパス付きで書く。
 
 ## Blog の記事の追加
@@ -122,9 +122,10 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / Career / Work with me）。
 - SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 
-## ホームの「同人誌（無料公開）」
+## Books（同人誌）のページ
 
-`ja/index.mdx` と `en/index.mdx` の、経歴の前に、サークル「Tech The Toaster」の電子書籍4冊（すべて無料。ショップ: https://techthetoaster.stores.jp/ ）を、表紙付きのカードで載せている。画像はショップの URL（`imagedelivery.net`、`fit=scale-down,w=460` で、元の比率の 460×650）で、`width`・`height` を付けている。`fit=cover` で切り抜くと、表紙の上下が切れる。書籍が増えたら、カードを足す（日本語版と英語版の両方）。
+`ja/books.mdx` と `en/books.mdx`（サイドバーの「Books」）に、サークル「Tech The Toaster」の電子書籍4冊（すべて無料。ショップ: https://techthetoaster.stores.jp/ ）を、表紙付きのカードで載せている。ホームには載せない（重要度が高くないため、Blog や Speaking と同じ、独立したメニューにした）。
+画像はショップの URL（`imagedelivery.net`、`fit=scale-down,w=460` で、元の比率の 460×650）で、`width`・`height` を付けている。`fit=cover` で切り抜くと、表紙の上下が切れる。書籍が増えたら、カードを足す（日本語版と英語版の両方）。
 
 ## 経歴の「主な取り組み」
 
