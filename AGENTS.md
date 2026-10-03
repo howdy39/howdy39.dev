@@ -111,6 +111,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
 
 ## 注意
+- Blog と Speaking の一覧ページ（`ja/blog/index.mdx`・`en/blog/index.mdx`・`ja/speaking.mdx`・`en/speaking.mdx`）は、フロントマターに `searchable: false` を付けている。`Update` の日付（`label`）が、見出しと同じ扱いで、サイト内検索に「2026/04/29」のような結果として出てしまうため。このページは、サイトマップ・Google の索引・`llms.txt` には、そのまま入る。個別の記事のページは、これまでどおり検索に出る。
 
 - `style.css` は次の5つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
   - サイドバーの「Blog」「Speaking」グループ（`#navigation-items > div`）を隠す。
