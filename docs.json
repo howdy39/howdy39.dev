@@ -188,6 +188,120 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Speaking",
+            "pages": [
+              {
+                "group": "2026/11",
+                "pages": [
+                  "ja/talks/2026-11-28-btconjp-sponsor-session"
+                ]
+              },
+              {
+                "group": "2026/09",
+                "pages": [
+                  "ja/talks/2026-09-02-mfi-admina-evangelist-webinar"
+                ]
+              },
+              {
+                "group": "2026/08",
+                "pages": [
+                  "ja/talks/2026-08-22-business-notion-community-permissions",
+                  "ja/talks/2026-08-06-dxer-syskul-vol11"
+                ]
+              },
+              {
+                "group": "2026/07",
+                "pages": [
+                  "ja/talks/2026-07-29-ai-helpdesk-pasona-mfi"
+                ]
+              },
+              {
+                "group": "2026/02",
+                "pages": [
+                  "ja/talks/2026-02-03-naha-nikkei-guest-lecture"
+                ]
+              },
+              {
+                "group": "2025/08",
+                "pages": [
+                  "ja/talks/2025-08-22-notion-webinar-stores",
+                  "ja/talks/2025-08-07-jmug-33"
+                ]
+              },
+              {
+                "group": "2025/07",
+                "pages": [
+                  "ja/talks/2025-07-11-iij-webinar"
+                ]
+              },
+              {
+                "group": "2025/06",
+                "pages": [
+                  "ja/talks/2025-06-25-beyond-corp-it-day"
+                ]
+              },
+              {
+                "group": "2025/05",
+                "pages": [
+                  "ja/talks/2025-05-22-stores-not-a-hotel"
+                ]
+              },
+              {
+                "group": "2025/04",
+                "pages": [
+                  "ja/talks/2025-04-15-uchi-no-joshisu-makuake"
+                ]
+              },
+              {
+                "group": "2025/03",
+                "pages": [
+                  "ja/talks/2025-03-19-uchi-no-joshisu-stores",
+                  "ja/talks/2025-03-05-uchi-no-joshisu-salary"
+                ]
+              },
+              {
+                "group": "2024/10",
+                "pages": [
+                  "ja/talks/2024-10-18-corpen-night-1",
+                  "ja/talks/2024-10-02-findy-lt",
+                  "ja/talks/2024-10-02-slides-slackbot-rag"
+                ]
+              },
+              {
+                "group": "2024/09",
+                "pages": [
+                  "ja/talks/2024-09-20-connect-i-keynote",
+                  "ja/talks/2024-09-20-slides-ai-strategy"
+                ]
+              },
+              {
+                "group": "2024/07",
+                "pages": [
+                  "ja/talks/2024-07-26-itmedia-saas-management",
+                  "ja/talks/2024-07-17-itmedia-expo-keynote"
+                ]
+              },
+              {
+                "group": "2024/04",
+                "pages": [
+                  "ja/talks/2024-04-17-admina-six-months"
+                ]
+              },
+              {
+                "group": "2023/10",
+                "pages": [
+                  "ja/talks/2023-10-11-slides-device-management"
+                ]
+              },
+              {
+                "group": "2023/05",
+                "pages": [
+                  "ja/talks/2023-05-12-slides-chatgpt-bot"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -368,6 +482,120 @@
                 "group": "2019/12",
                 "pages": [
                   "en/blog/2019-12-23-qiita-nuxt-gas-search"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Speaking",
+            "pages": [
+              {
+                "group": "2026/11",
+                "pages": [
+                  "en/talks/2026-11-28-btconjp-sponsor-session"
+                ]
+              },
+              {
+                "group": "2026/09",
+                "pages": [
+                  "en/talks/2026-09-02-mfi-admina-evangelist-webinar"
+                ]
+              },
+              {
+                "group": "2026/08",
+                "pages": [
+                  "en/talks/2026-08-22-business-notion-community-permissions",
+                  "en/talks/2026-08-06-dxer-syskul-vol11"
+                ]
+              },
+              {
+                "group": "2026/07",
+                "pages": [
+                  "en/talks/2026-07-29-ai-helpdesk-pasona-mfi"
+                ]
+              },
+              {
+                "group": "2026/02",
+                "pages": [
+                  "en/talks/2026-02-03-naha-nikkei-guest-lecture"
+                ]
+              },
+              {
+                "group": "2025/08",
+                "pages": [
+                  "en/talks/2025-08-22-notion-webinar-stores",
+                  "en/talks/2025-08-07-jmug-33"
+                ]
+              },
+              {
+                "group": "2025/07",
+                "pages": [
+                  "en/talks/2025-07-11-iij-webinar"
+                ]
+              },
+              {
+                "group": "2025/06",
+                "pages": [
+                  "en/talks/2025-06-25-beyond-corp-it-day"
+                ]
+              },
+              {
+                "group": "2025/05",
+                "pages": [
+                  "en/talks/2025-05-22-stores-not-a-hotel"
+                ]
+              },
+              {
+                "group": "2025/04",
+                "pages": [
+                  "en/talks/2025-04-15-uchi-no-joshisu-makuake"
+                ]
+              },
+              {
+                "group": "2025/03",
+                "pages": [
+                  "en/talks/2025-03-19-uchi-no-joshisu-stores",
+                  "en/talks/2025-03-05-uchi-no-joshisu-salary"
+                ]
+              },
+              {
+                "group": "2024/10",
+                "pages": [
+                  "en/talks/2024-10-18-corpen-night-1",
+                  "en/talks/2024-10-02-findy-lt",
+                  "en/talks/2024-10-02-slides-slackbot-rag"
+                ]
+              },
+              {
+                "group": "2024/09",
+                "pages": [
+                  "en/talks/2024-09-20-connect-i-keynote",
+                  "en/talks/2024-09-20-slides-ai-strategy"
+                ]
+              },
+              {
+                "group": "2024/07",
+                "pages": [
+                  "en/talks/2024-07-26-itmedia-saas-management",
+                  "en/talks/2024-07-17-itmedia-expo-keynote"
+                ]
+              },
+              {
+                "group": "2024/04",
+                "pages": [
+                  "en/talks/2024-04-17-admina-six-months"
+                ]
+              },
+              {
+                "group": "2023/10",
+                "pages": [
+                  "en/talks/2023-10-11-slides-device-management"
+                ]
+              },
+              {
+                "group": "2023/05",
+                "pages": [
+                  "en/talks/2023-05-12-slides-chatgpt-bot"
                 ]
               }
             ]

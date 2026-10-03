@@ -35,7 +35,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
    - `description`: 著者が自分で紹介する口調（です・ます調、主語は省く）で、150〜200字ほど。記事に書いていない感想は足さない。`llms.txt` と検索に使われる。
    - `tag`: 掲載元（`note` / `Zenn` / `Qiita`）。サイドバーに表示される。
-2. `docs.json` の `ja` の「Blog posts」グループ（年ごとのグループ）に、新しい順でページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。
+2. `docs.json` の `ja` の「Blog posts」グループにある、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。このグループは、サイドバーには出さず（`style.css` で隠す）、サイト内検索と `llms.txt` に載せるためだけにある。
 3. `ja/blog/index.mdx` に `Update` ブロックを、新しい順で追加する。
 
    ```
@@ -51,7 +51,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
    - OGP 画像は、元記事の `og:image` の URL をそのまま使う。
 4. 英語版も作る。`llms.txt` は、既定の言語（日本語）のページだけが本体で、英語は別の索引（`/_llms/en.md`）になるので、英語のページがないと、英語の AI や検索から記事が見つからない。
    - `en/blog/<日本語版と同じファイル名>.mdx`: `title`（英訳）、`description`（日本語の紹介文を、同じ一人称の文体で英訳）、`keywords`（英語）、`url` と `tag`（日本語版と同じ）。
-   - `docs.json` の `en` の「Blog posts」グループ（年ごとのグループ）に、同じ順でページを追加する。
+   - `docs.json` の `en` の「Blog posts」グループに、同じ月のグループで、ページを追加する。
    - `en/blog/index.mdx` に、同じ `Update` ブロックを追加する。タイトルとタグだけ英訳し、日付・画像・リンクは同じにする。
    - タグの英訳: `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS management` / `ID` / `Security` / `Corporate IT`（情シス）/ `Management`（マネジメント）/ `Essay`（エッセイ）
 
@@ -62,27 +62,45 @@ Mintlify で作った個人サイト（自己紹介・Blog・Archive）。`howdy
 
 `AI` / `Notion` / `GAS` / `Google Workspace` / `SaaS管理` / `ID` / `セキュリティ` / `情シス` / `マネジメント` / `エッセイ`
 
-## Speaking（登壇・メディア掲載）
+## Speaking（登壇・メディア掲載・スライド）
 
-`ja/speaking.mdx` と `en/speaking.mdx` に、`Update` を新しい順で並べる。Blog と違い、1エントリ1ファイルにはしない。
+一覧は `ja/speaking.mdx` と `en/speaking.mdx` に、`Update` と `Card` を新しい順で並べる。あわせて、1エントリにつき1ページを `ja/talks/`・`en/talks/` に作る（検索・`llms.txt`・年月のグループのため。Blog の記事と同じ考え方）。
 
-```
-<Update label="YYYY/MM/DD" tags={["登壇"]}>
-  [イベント名](イベントページのURL) / [資料](Speaker DeckのURL)
-</Update>
-```
+1. 一覧にエントリを足す。
 
-- 本文は、イベントの正式な名称（主催者とタイトル）をそのまま書く。リンクは、イベントページがあれば付け、資料があれば「/ 資料」で足す。
+   ```
+   <Update label="YYYY/MM/DD" tags={["登壇"]}>
+     <Card title={"主催者名 イベント名"} img="OGP画像のURL" href="イベントページのURL" cta="イベントページ" arrow="true" />
+   </Update>
+   ```
+
+   - `title` は、イベントの正式な名称（主催者とタイトル）をそのまま書く。`"` は `\"` と書く。
+   - `href`・`img`・`cta` は、リンクがあるときだけ付ける。リンクのない Card は、クリックできない枠になる。
+   - 画像は、イベントページの `og:image` をそのまま使う。画像がなければ付けない。
+2. `ja/talks/YYYY-MM-DD-<スラッグ>.mdx` を作る。同じ日付に複数あっても、スラッグで区別する。
+
+   ```
+   ---
+   title: "Card と同じ title"
+   description: "YYYY年M月D日、<title>（<役割>）。"
+   url: "href と同じ URL"
+   tag: "登壇"
+   ---
+   ```
+
+   - リンクのないエントリは、`url` を書かず、本文に `YYYY/MM/DD · 役割` と書く。
+3. `docs.json` の `ja` の「Speaking」グループにある、`YYYY/MM` のグループ（なければ新しく作る。新しい月が上）に、ページを追加する。
+4. 英語版も同じ手順で作る（`en/speaking.mdx`、`en/talks/`、`docs.json` の `en`）。`title` は、イベント名の説明部分を英訳し、会社名やイベント名の英語表記が不確かなものは日本語のままにする。`description` は `Month D, YYYY: <title> (<role>).`。
+
 - `tags` は**役割**だけで、1エントリに1つ。Blog のトピックのタグは使わない（フィルターの軸が別）。
   - `登壇`（通常の登壇、ゲスト、パネルなど）/ `基調講演`（キーセッションを含む）/ `LT` / `ファシリテーター` / `外部講師` / `メディア` / `スライド`
   - 英語版は `Talk` / `Keynote` / `Lightning talk` / `Facilitator` / `Guest lecturer` / `Media` / `Slides`
 - `スライド` は、Speaker Deck の資料を、1件1エントリで載せるときのタグ。日付は Speaker Deck の公開日、タイトルは資料のタイトル、リンクの文言（`cta`）は `Speaker Deck`。登壇のエントリに、資料のリンクを足す形にはしない。
-- 日本語版と英語版の両方を更新する。英語版は、イベント名の説明部分を英訳し、会社名やイベント名の英語表記が不確かなものは日本語のままにする。
 - 登壇の「予定」は、専用のタグを作らず、そのまま `登壇` として足す。
 
 ## 注意
 
 - `style.css` は次の2つのためのもの。Mintlify の DOM（`.update`、`#content`、`#navigation-items`）に頼っているので、Mintlify の更新で崩れる可能性がある。
-  - サイドバーの「Blog posts」グループ（`#navigation-items > div`）を隠す。
+  - サイドバーの「Blog posts」「Speaking」グループ（`#navigation-items > div`）を隠す。
   - `Update` を並べたページ（Blog、Speaking）を2カラムにする。
 - 公開後の `/llms.txt` は CDN にキャッシュされる。最新の中身を見たいときは `/llms.txt?nocache=1` のようにクエリを付ける。
