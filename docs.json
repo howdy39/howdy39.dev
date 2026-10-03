@@ -19,31 +19,170 @@
             "group": "Blog posts",
             "pages": [
               {
-                "group": "2026",
-                "expanded": true,
+                "group": "2026/09",
                 "pages": [
-                  "ja/blog/2026-09-07-note-colonoscopy",
+                  "ja/blog/2026-09-07-note-colonoscopy"
+                ]
+              },
+              {
+                "group": "2026/08",
+                "pages": [
                   "ja/blog/2026-08-13-note-gratitude-motivation",
                   "ja/blog/2026-08-10-note-claude-code-auto-mode",
-                  "ja/blog/2026-08-05-note-comfortable-environment",
+                  "ja/blog/2026-08-05-note-comfortable-environment"
+                ]
+              },
+              {
+                "group": "2026/07",
+                "pages": [
                   "ja/blog/2026-07-09-note-claude-5h-limit",
-                  "ja/blog/2026-07-06-note-backoffice-experience",
-                  "ja/blog/2026-06-18-note-more-headcount-ai",
-                  "ja/blog/2026-05-27-note-leaving-stores",
+                  "ja/blog/2026-07-06-note-backoffice-experience"
+                ]
+              },
+              {
+                "group": "2026/06",
+                "pages": [
+                  "ja/blog/2026-06-18-note-more-headcount-ai"
+                ]
+              },
+              {
+                "group": "2026/05",
+                "pages": [
+                  "ja/blog/2026-05-27-note-leaving-stores"
+                ]
+              },
+              {
+                "group": "2026/04",
+                "pages": [
                   "ja/blog/2026-04-29-zenn-gas-vertex-ai",
                   "ja/blog/2026-04-20-note-1password-hosted-provisioning",
-                  "ja/blog/2026-04-03-note-scim-account-deletion",
+                  "ja/blog/2026-04-03-note-scim-account-deletion"
+                ]
+              },
+              {
+                "group": "2026/03",
+                "pages": [
                   "ja/blog/2026-03-26-note-youtrust-scout-ai",
-                  "ja/blog/2026-03-12-note-notion-agent-helpdesk",
+                  "ja/blog/2026-03-12-note-notion-agent-helpdesk"
+                ]
+              },
+              {
+                "group": "2026/02",
+                "pages": [
                   "ja/blog/2026-02-26-note-who-do-you-work-for",
-                  "ja/blog/2026-02-25-note-notion-custom-agents",
+                  "ja/blog/2026-02-25-note-notion-custom-agents"
+                ]
+              },
+              {
+                "group": "2026/01",
+                "pages": [
                   "ja/blog/2026-01-29-note-true-kindness",
                   "ja/blog/2026-01-11-note-protect-for-now"
                 ]
               },
               {
-                "group": "2019",
-                "expanded": false,
+                "group": "2025/12",
+                "pages": [
+                  "ja/blog/2025-12-31-note-2025-review",
+                  "ja/blog/2025-12-17-note-saas-unused-account-review"
+                ]
+              },
+              {
+                "group": "2025/11",
+                "pages": [
+                  "ja/blog/2025-11-25-note-company-email-address"
+                ]
+              },
+              {
+                "group": "2025/10",
+                "pages": [
+                  "ja/blog/2025-10-10-note-lets-do-it",
+                  "ja/blog/2025-10-08-note-it-customer-success"
+                ]
+              },
+              {
+                "group": "2025/09",
+                "pages": [
+                  "ja/blog/2025-09-30-note-search-conditions-in-url"
+                ]
+              },
+              {
+                "group": "2025/08",
+                "pages": [
+                  "ja/blog/2025-08-08-zenn-gemini-canvas-gas"
+                ]
+              },
+              {
+                "group": "2025/07",
+                "pages": [
+                  "ja/blog/2025-07-28-note-google-forms-ai-japanese"
+                ]
+              },
+              {
+                "group": "2025/06",
+                "pages": [
+                  "ja/blog/2025-06-30-note-sheets-ai-function-japanese",
+                  "ja/blog/2025-06-24-note-gemini-google-vids-howto-video",
+                  "ja/blog/2025-06-19-note-notebooklm-external-sharing"
+                ]
+              },
+              {
+                "group": "2025/05",
+                "pages": [
+                  "ja/blog/2025-05-30-note-notion-represent-people",
+                  "ja/blog/2025-05-11-note-tech-the-toaster"
+                ]
+              },
+              {
+                "group": "2025/03",
+                "pages": [
+                  "ja/blog/2025-03-31-note-notion-export-disable-guideline",
+                  "ja/blog/2025-03-18-note-notion-automation-slack",
+                  "ja/blog/2025-03-11-note-my-notion-way"
+                ]
+              },
+              {
+                "group": "2025/02",
+                "pages": [
+                  "ja/blog/2025-02-17-note-notion-center-of-work"
+                ]
+              },
+              {
+                "group": "2025/01",
+                "pages": [
+                  "ja/blog/2025-01-16-zenn-google-workspace-ai-addon"
+                ]
+              },
+              {
+                "group": "2024/12",
+                "pages": [
+                  "ja/blog/2024-12-30-note-2024-review",
+                  "ja/blog/2024-12-24-note-resilient-it-team"
+                ]
+              },
+              {
+                "group": "2024/07",
+                "pages": [
+                  "ja/blog/2024-07-22-zenn-slack-legacy-workflows",
+                  "ja/blog/2024-07-14-zenn-dify-gas-custom-function"
+                ]
+              },
+              {
+                "group": "2024/02",
+                "pages": [
+                  "ja/blog/2024-02-04-zenn-admina-api-looker-studio"
+                ]
+              },
+              {
+                "group": "2024/01",
+                "pages": [
+                  "ja/blog/2024-01-14-note-interpretation-skill",
+                  "ja/blog/2024-01-11-zenn-1password-report-date-gas",
+                  "ja/blog/2024-01-08-note-behavior-change-growth"
+                ]
+              },
+              {
+                "group": "2019/12",
                 "pages": [
                   "ja/blog/2019-12-23-qiita-nuxt-gas-search"
                 ]
@@ -63,31 +202,170 @@
             "group": "Blog posts",
             "pages": [
               {
-                "group": "2026",
-                "expanded": true,
+                "group": "2026/09",
                 "pages": [
-                  "en/blog/2026-09-07-note-colonoscopy",
+                  "en/blog/2026-09-07-note-colonoscopy"
+                ]
+              },
+              {
+                "group": "2026/08",
+                "pages": [
                   "en/blog/2026-08-13-note-gratitude-motivation",
                   "en/blog/2026-08-10-note-claude-code-auto-mode",
-                  "en/blog/2026-08-05-note-comfortable-environment",
+                  "en/blog/2026-08-05-note-comfortable-environment"
+                ]
+              },
+              {
+                "group": "2026/07",
+                "pages": [
                   "en/blog/2026-07-09-note-claude-5h-limit",
-                  "en/blog/2026-07-06-note-backoffice-experience",
-                  "en/blog/2026-06-18-note-more-headcount-ai",
-                  "en/blog/2026-05-27-note-leaving-stores",
+                  "en/blog/2026-07-06-note-backoffice-experience"
+                ]
+              },
+              {
+                "group": "2026/06",
+                "pages": [
+                  "en/blog/2026-06-18-note-more-headcount-ai"
+                ]
+              },
+              {
+                "group": "2026/05",
+                "pages": [
+                  "en/blog/2026-05-27-note-leaving-stores"
+                ]
+              },
+              {
+                "group": "2026/04",
+                "pages": [
                   "en/blog/2026-04-29-zenn-gas-vertex-ai",
                   "en/blog/2026-04-20-note-1password-hosted-provisioning",
-                  "en/blog/2026-04-03-note-scim-account-deletion",
+                  "en/blog/2026-04-03-note-scim-account-deletion"
+                ]
+              },
+              {
+                "group": "2026/03",
+                "pages": [
                   "en/blog/2026-03-26-note-youtrust-scout-ai",
-                  "en/blog/2026-03-12-note-notion-agent-helpdesk",
+                  "en/blog/2026-03-12-note-notion-agent-helpdesk"
+                ]
+              },
+              {
+                "group": "2026/02",
+                "pages": [
                   "en/blog/2026-02-26-note-who-do-you-work-for",
-                  "en/blog/2026-02-25-note-notion-custom-agents",
+                  "en/blog/2026-02-25-note-notion-custom-agents"
+                ]
+              },
+              {
+                "group": "2026/01",
+                "pages": [
                   "en/blog/2026-01-29-note-true-kindness",
                   "en/blog/2026-01-11-note-protect-for-now"
                 ]
               },
               {
-                "group": "2019",
-                "expanded": false,
+                "group": "2025/12",
+                "pages": [
+                  "en/blog/2025-12-31-note-2025-review",
+                  "en/blog/2025-12-17-note-saas-unused-account-review"
+                ]
+              },
+              {
+                "group": "2025/11",
+                "pages": [
+                  "en/blog/2025-11-25-note-company-email-address"
+                ]
+              },
+              {
+                "group": "2025/10",
+                "pages": [
+                  "en/blog/2025-10-10-note-lets-do-it",
+                  "en/blog/2025-10-08-note-it-customer-success"
+                ]
+              },
+              {
+                "group": "2025/09",
+                "pages": [
+                  "en/blog/2025-09-30-note-search-conditions-in-url"
+                ]
+              },
+              {
+                "group": "2025/08",
+                "pages": [
+                  "en/blog/2025-08-08-zenn-gemini-canvas-gas"
+                ]
+              },
+              {
+                "group": "2025/07",
+                "pages": [
+                  "en/blog/2025-07-28-note-google-forms-ai-japanese"
+                ]
+              },
+              {
+                "group": "2025/06",
+                "pages": [
+                  "en/blog/2025-06-30-note-sheets-ai-function-japanese",
+                  "en/blog/2025-06-24-note-gemini-google-vids-howto-video",
+                  "en/blog/2025-06-19-note-notebooklm-external-sharing"
+                ]
+              },
+              {
+                "group": "2025/05",
+                "pages": [
+                  "en/blog/2025-05-30-note-notion-represent-people",
+                  "en/blog/2025-05-11-note-tech-the-toaster"
+                ]
+              },
+              {
+                "group": "2025/03",
+                "pages": [
+                  "en/blog/2025-03-31-note-notion-export-disable-guideline",
+                  "en/blog/2025-03-18-note-notion-automation-slack",
+                  "en/blog/2025-03-11-note-my-notion-way"
+                ]
+              },
+              {
+                "group": "2025/02",
+                "pages": [
+                  "en/blog/2025-02-17-note-notion-center-of-work"
+                ]
+              },
+              {
+                "group": "2025/01",
+                "pages": [
+                  "en/blog/2025-01-16-zenn-google-workspace-ai-addon"
+                ]
+              },
+              {
+                "group": "2024/12",
+                "pages": [
+                  "en/blog/2024-12-30-note-2024-review",
+                  "en/blog/2024-12-24-note-resilient-it-team"
+                ]
+              },
+              {
+                "group": "2024/07",
+                "pages": [
+                  "en/blog/2024-07-22-zenn-slack-legacy-workflows",
+                  "en/blog/2024-07-14-zenn-dify-gas-custom-function"
+                ]
+              },
+              {
+                "group": "2024/02",
+                "pages": [
+                  "en/blog/2024-02-04-zenn-admina-api-looker-studio"
+                ]
+              },
+              {
+                "group": "2024/01",
+                "pages": [
+                  "en/blog/2024-01-14-note-interpretation-skill",
+                  "en/blog/2024-01-11-zenn-1password-report-date-gas",
+                  "en/blog/2024-01-08-note-behavior-change-growth"
+                ]
+              },
+              {
+                "group": "2019/12",
                 "pages": [
                   "en/blog/2019-12-23-qiita-nuxt-gas-search"
                 ]
