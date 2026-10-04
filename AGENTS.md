@@ -8,7 +8,12 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - プレビュー: `nodenv exec npx mint dev`（http://localhost:3000）
 - 検証: `mint validate` と `mint broken-links`
 - コミットは Conventional Commits 形式。作業の区切りごとに、確認を待たずにコミットしてよい。
-- push は、本番（`https://howdy39.dev/`）で確認したいときだけ行う。毎回は push しない。
+- `main` は、GitHub のルールセット（`protect-main`）で保護している。**`main` への直接の push は、できない**（管理者も例外ではない）。変更は、必ず、ブランチと PR を経由する。
+  1. `main` から、ブランチを作る（`feat/…`、`fix/…`、`docs/…` など）。
+  2. ブランチを push して、`gh pr create` で PR を作る。本文の最後に、`🤖 Generated with [Claude Code](https://claude.com/claude-code)` を付ける。
+  3. マージは、ユーザーが行う（頼まれたときだけ、こちらで行う）。マージすると、Mintlify が本番（`https://howdy39.dev/`）に反映する。
+  4. マージ後、本番で確認する（デプロイの完了を待ってから、`?nocache=…` を付けて見る）。
+- ユーザーが「push して本番で確認して」と言ったときは、上の 1〜2（ブランチの push と PR の作成）まで進め、PR の URL を伝えて、マージを待つ。マージされたら、手順 4 の確認をする。
 
 ## 構成
 
