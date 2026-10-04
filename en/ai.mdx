@@ -1,0 +1,59 @@
+---
+title: "Use with AI"
+sidebarTitle: "AI"
+description: "Entry points for reading and searching howdy39.dev from AI tools: llms.txt, Markdown, and an MCP server."
+---
+
+This site uses Mintlify's AI-native features, so AI can read it as it is. Besides the pages for people, there are entry points for AI. Both the Japanese and the English versions work.
+
+## Entry points
+
+- **llms.txt**: [https://howdy39.dev/llms.txt](https://howdy39.dev/llms.txt)<br />An index of the whole site, so AI can see which pages exist.
+- **llms-full.txt**: [https://howdy39.dev/llms-full.txt](https://howdy39.dev/llms-full.txt)<br />The content of all pages in one file, including the summaries of the articles.
+- **English index**: [https://howdy39.dev/_llms/en.md](https://howdy39.dev/_llms/en.md)<br />An index of the English pages.
+- **Page as Markdown**: Add `.md` to the end of a page's URL.<br />Example: [https://howdy39.dev/en.md](https://howdy39.dev/en.md)
+- **MCP server**: `https://howdy39.dev/mcp`<br />Search and read this site from an AI tool.
+
+## Connect to the MCP server
+
+Once an AI tool is connected to the MCP server, it can search this site and read the pages. You can ask it something like "Which articles has howdy39 written about Notion?"
+
+The MCP server URL is `https://howdy39.dev/mcp`.
+
+### Claude (claude.ai)
+
+1. Open [Connectors](https://claude.ai/settings/connectors).
+2. Click **Add custom connector**.
+3. Enter `howdy39.dev` as the name and `https://howdy39.dev/mcp` as the URL, then click **Add**.
+4. In a chat, click the "+" button next to the input box and select `howdy39.dev`.
+
+### Claude Code
+
+```bash
+claude mcp add --transport http howdy39-dev https://howdy39.dev/mcp
+```
+
+### Cursor and others
+
+Add this to `mcp.json`.
+
+```json
+{
+  "mcpServers": {
+    "howdy39-dev": {
+      "url": "https://howdy39.dev/mcp"
+    }
+  }
+}
+```
+
+### What it can do
+
+- `search_howdy39_dev`: search the content of the site.
+- `query_docs_filesystem_howdy39_dev`: open and read the pages like files.
+
+It only covers the published pages. It is read-only, except for a tool that reports an error on a page.
+
+## How it's built
+
+This site is built with Mintlify. The source is public on [GitHub](https://github.com/howdy39/howdy39.dev).

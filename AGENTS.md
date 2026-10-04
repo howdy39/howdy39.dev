@@ -12,8 +12,8 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 
 ## 構成
 
-- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking・Books・Videos を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
-- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Books / Videos の5項目だけを出す。
+- `ja/` が既定の言語。`en/` は、Home・Blog・Speaking・Books・Videos・AI を英訳している（Blog と Speaking は、日本語版と同じ作りで、タイトルとタグを英訳）。
+- `docs.json` の `navigation.languages` に、言語ごとのページを並べている。タブは使わず、サイドバーに Home / Blog / Speaking / Books / Videos / AI の6項目だけを出す。
 - ページは `ja/` `en/` の下に置く。内部リンクは `/ja/...` のようにパス付きで書く。
 
 ## Blog の記事の追加
@@ -132,6 +132,11 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
   - 記事や登壇が増えたら、ときどき数え直す。
 - スキル: 経歴の表の「技術」と、導入した SaaS、記事に出てくる技術だけを、分野ごとのチップで並べる。根拠のない技術は足さない。
 - メディア掲載・インタビューは、ホームには載せない（要らないと言われた）。Speaking の `メディア` と、Blog の `STORES note` に載せている。
+
+## AI のページ
+
+`ja/ai.mdx` と `en/ai.mdx`（サイドバーの「AI」）に、AI ツールからこのサイトを使うための入り口を書いている。Mintlify が自動で用意する、`llms.txt`・`llms-full.txt`・英語版の索引（`/_llms/en.md`）・各ページの Markdown（URL の末尾に `.md`）・MCP サーバー（`https://howdy39.dev/mcp`）の一覧と、MCP サーバーへのつなぎ方（Claude、Claude Code、Cursor など）。
+Mintlify はこのサイトの特徴を「AI-native」と呼んでいる。ページでも同じ言葉を使う。MCP サーバーのツール名（`search_howdy39_dev`、`query_docs_filesystem_howdy39_dev`）や、つなぎ方は、Mintlify の公式の説明（https://www.mintlify.com/docs/ai/model-context-protocol）に合わせている。Mintlify の仕様が変わったら、直す。
 
 ## Books（同人誌）のページ
 
