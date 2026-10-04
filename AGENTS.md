@@ -168,4 +168,5 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
   - ダークモードで `body` に背景色を塗る。Mintlify はページの背景色を、`z-index: -10` の固定の `<span id="background-color">` に塗っていて、Lighthouse のコントラストの検査はそれを見られず、背景を白と見なして、明るい文字のすべてを「コントラスト不足」にしてしまう（誤検知）。同じ色を `body` にも塗って防ぐ。Mintlify の色が変わったら、この色も直す。
   - フッターの「Powered by Mintlify」の文字が少し暗い（4.1:1）ので、明るくする。
 - Google Search Console に、ドメインプロパティ（`howdy39.dev`）として登録している（2026年10月4日。確認は DNS の TXT レコード）。Gandi の DNS の `@` にある `google-site-verification=…` の TXT を消すと、確認が外れる。サイトマップは `https://howdy39.dev/sitemap.xml` を送信済み。サイトマップに入るのは、`url` フロントマターのない14ページ（Home・Blog・Speaking・Books・Videos の一覧と、リンクのない登壇の2ページ、日本語版と英語版）だけ。記事のページ（外部サイトへのリンク）は入らず、サイト内検索と `llms.txt` のためにある。
+- アクセス解析のタグ（GTM、GA4 など）は入れない（2026年10月4日に決めた）。外部の JavaScript が増えて、Lighthouse の Performance が下がるため。見ることも少ない。流入は Search Console で見る。必要になったら、GTM ではなく GA4（`docs.json` の `integrations.ga4`）を直接入れる。
 - 公開後の `/llms.txt` は CDN にキャッシュされる。最新の中身を見たいときは `/llms.txt?nocache=1` のようにクエリを付ける。
