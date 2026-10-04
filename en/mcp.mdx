@@ -1,0 +1,58 @@
+---
+title: "MCP server"
+sidebarTitle: "MCP"
+description: "How to connect to the howdy39.dev MCP server. There are also other entry points for AI, such as llms.txt and Markdown."
+---
+
+This site has an MCP server. Once an AI tool such as Claude is connected, it can search this site and read my articles and career. You can ask it something like "Which articles has howdy39 written about Notion?"
+
+Thanks to Mintlify's AI-native features, there are other entry points for AI as well. Both the Japanese and the English versions work.
+
+## Connect to the MCP server
+
+The MCP server URL is `https://howdy39.dev/mcp`.
+
+### Claude (claude.ai)
+
+1. Open [Connectors](https://claude.ai/settings/connectors).
+2. Click **Add custom connector**.
+3. Enter `howdy39.dev` as the name and `https://howdy39.dev/mcp` as the URL, then click **Add**.
+4. In a chat, click the "+" button next to the input box and select `howdy39.dev`.
+
+### Claude Code
+
+```bash
+claude mcp add --transport http howdy39-dev https://howdy39.dev/mcp
+```
+
+### Cursor and others
+
+Add this to `mcp.json`.
+
+```json
+{
+  "mcpServers": {
+    "howdy39-dev": {
+      "url": "https://howdy39.dev/mcp"
+    }
+  }
+}
+```
+
+### What it can do
+
+- `search_howdy39_dev`: search the content of the site.
+- `query_docs_filesystem_howdy39_dev`: open and read the pages like files.
+
+It only covers the published pages. It is read-only, except for a tool that reports an error on a page.
+
+## Other entry points for AI
+
+- **llms.txt**: [https://howdy39.dev/llms.txt](https://howdy39.dev/llms.txt)<br />An index of the whole site, so AI can see which pages exist.
+- **llms-full.txt**: [https://howdy39.dev/llms-full.txt](https://howdy39.dev/llms-full.txt)<br />The content of all pages in one file, including the summaries of the articles.
+- **English index**: [https://howdy39.dev/_llms/en.md](https://howdy39.dev/_llms/en.md)<br />An index of the English pages.
+- **Page as Markdown**: Add `.md` to the end of a page's URL.<br />Example: [https://howdy39.dev/en.md](https://howdy39.dev/en.md)
+
+## How it's built
+
+This site is built with Mintlify. The source is public on [GitHub](https://github.com/howdy39/howdy39.dev).
