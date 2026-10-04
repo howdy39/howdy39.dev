@@ -58,6 +58,12 @@
           "ja/videos",
           "ja/mcp",
           {
+            "group": "Blog › 2026/10",
+            "pages": [
+              "ja/blog/2026-10-04-note-mintlify-ai-native-portfolio"
+            ]
+          },
+          {
             "group": "Blog › 2026/09",
             "pages": [
               "ja/blog/2026-09-07-note-colonoscopy"
@@ -721,6 +727,12 @@
           "en/books",
           "en/videos",
           "en/mcp",
+          {
+            "group": "Blog › 2026/10",
+            "pages": [
+              "en/blog/2026-10-04-note-mintlify-ai-native-portfolio"
+            ]
+          },
           {
             "group": "Blog › 2026/09",
             "pages": [
