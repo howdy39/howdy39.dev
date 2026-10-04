@@ -53,3 +53,15 @@
     margin-top: 0;
   }
 }
+
+/* Mintlify paints the page color on a fixed span (#background-color, z-index: -10)
+   that Lighthouse's contrast check can't see, so it assumes a white background and
+   flags every light-on-dark text. Paint the same color on the body too. */
+html.dark body {
+  background-color: rgb(10, 13, 13);
+}
+
+/* The "Powered by" text in the footer is a touch too dim (4.1:1); lift it to 4.5:1+. */
+html.dark #footer a span:not(.sr-only) {
+  color: rgb(156, 163, 175);
+}
