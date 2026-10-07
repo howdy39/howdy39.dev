@@ -155,7 +155,10 @@ Mintlify はこのサイトの特徴を「AI-native」と呼んでいる。ペ�
 
 ## SEO（OGP 画像・構造化データ）
 
-- **OGP 画像**: `images/ogp.jpg`（1200×630。アバター、名前、肩書き、ドメイン）を、`docs.json` の `seo.metatags`（`og:image`・`twitter:image`）で、全ページに設定している。これを設定しないと、Mintlify が自動で作る画像の URL（`mintlify.app`）が、OGP に出る。肩書きなどを変えたら、画像を作り直す（HTML をヘッドレス Chrome でスクリーンショットし、`sips` で JPEG にした）。
+- **OGP 画像**: ホーム（`ja/index.mdx`・`en/index.mdx`）だけ、`images/ogp.jpg`（1200×630。アバター、名前、肩書き、ドメイン）を、フロントマターの `og:image`・`og:image:width`・`og:image:height`・`twitter:image` で指定している。それ以外のページは、Mintlify が自動で作る、ページのタイトルと説明文入りの画像（緑のグラデーション）を使う。Mintlify の自動生成の画像の URL は `mintlify.app` のドメインになる。
+  - `docs.json` の `seo.metatags` に `og:image` を置くと、全ページの自動生成の画像が置き換わってしまう（以前はそうしていた）。置かない。
+  - 自動生成の画像の背景や文字は、`docs.json` の `thumbnails`（`appearance`・`background`・`fonts`）で変えられる。今は使っていない。
+  - 肩書きなどを変えたら、`images/ogp.jpg` を作り直す（HTML をヘッドレス Chrome でスクリーンショットし、`sips` で JPEG にした）。
 - **Person の構造化データ**: ホーム（`ja/index.mdx`・`en/index.mdx`）の先頭に、`<script type="application/ld+json">` で、Person（名前、別名、肩書き、所属、`knowsAbout`、`sameAs`）を書いている。`dangerouslySetInnerHTML` は、中身が空になるので使わず、JSON を、テンプレートリテラルの子要素として書く。肩書き・所属・SNS が変わったら、ここも直す。Mintlify が自動で入れる Organization / WebSite の構造化データは、消せない。
 
 ## 経歴の「主な取り組み」
