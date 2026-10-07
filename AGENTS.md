@@ -124,7 +124,7 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 - 最近書いたブログ: 4件を、2列の画像付きカード（`<a>` と `<img>`）で載せる。Blog のエントリを足したら、新しい順の上位4件になるよう、`<a>` を差し替える。`href`・`img`・タイトルは、一覧（`blog/index.mdx`）の Card と同じ。日付と掲載元は `YYYY/MM/DD`・`note` のように、下に書く。画像は `loading="lazy"`。
 - 登壇予定: `<div data-upcoming-talks>` の中に、`<a data-talk-date="YYYY/MM/DD">` のカードを並べる。ルートの `upcoming-talks.js`（全ページに読み込まれる）が、サイトを開いた日より前の `data-talk-date` のカードを隠し、1件も残らなければ、`data-upcoming-empty` の「現在、公開している登壇予定はありません。」を出す。サイトは静的なので、再ビルドしなくても、開催日が過ぎたカードは、自動で消える（日付単位。当日は表示）。新しい登壇の予定が決まったら、Speaking の一覧に足すのと一緒に、ここにも `<a>` を足す。過ぎたものは、消さなくてもよいが、溜まったら消す。先頭のカードの画像だけ `fetchPriority="high"`（LCP の画像）。
 - 見出しは、右側の目次に出すため `##` にしている。日本語版は日本語（登壇予定 / 最近書いたブログ / 数字で見る / スキル / 経歴 / お仕事のご依頼）、英語版は英語（Upcoming talks / Recent posts / By the numbers / Skills / Career / Work with me）。
-- SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.svg` と `images/logo-dark.svg`。アバターと「howdy39.dev」の文字を、パスにして1枚にした SVG）に使っている。ロゴを作り直すときは、アバターを80px ほどにして埋め込み、Inter Bold の文字をパスにする。
+- SNS のリンクは、`docs.json` の `navbar.links`（ヘッダー右上）に置いている。アバター（`images/avatar.png`）は、ファビコンと、ヘッダーのロゴ（`images/logo-light.png` と `images/logo-dark.png`。アバターと「howdy39.dev」の文字を1枚にした、600×120 の透過 PNG）に使っている。PNG にしているのは、Mintlify が自動で作る OGP 画像が、SVG に埋め込んだアバター（写真）を描けず、犬のアイコンが空白になるため。元の SVG（`images/logo-light.svg`・`images/logo-dark.svg`）は、PNG を作り直すときの元データとして残している。ロゴを作り直すときは、アバターを80px ほどにして SVG に埋め込み、Inter Bold の文字をパスにして、ヘッドレス Chrome で、3倍（600×120）の透過 PNG にする。
 
 ## ホームの「数字で見る」「スキル」
 
@@ -155,7 +155,7 @@ Mintlify はこのサイトの特徴を「AI-native」と呼んでいる。ペ�
 
 ## SEO（OGP 画像・構造化データ）
 
-- **OGP 画像**: ホーム（`ja/index.mdx`・`en/index.mdx`）だけ、`images/ogp.jpg`（1200×630。アバター、名前、肩書き、ドメイン）を、フロントマターの `og:image`・`og:image:width`・`og:image:height`・`twitter:image` で指定している。それ以外のページは、Mintlify が自動で作る、ページのタイトルと説明文入りの画像（緑のグラデーション）を使う。Mintlify の自動生成の画像の URL は `mintlify.app` のドメインになる。
+- **OGP 画像**: ホーム（`ja/index.mdx`・`en/index.mdx`）だけ、`images/ogp.jpg`（1200×630。アバター、名前、肩書き、ドメイン）を、フロントマターの `og:image`・`og:image:width`・`og:image:height`・`twitter:image` で指定している。それ以外のページは、Mintlify が自動で作る、ページのタイトルと説明文入りの画像（緑のグラデーション。左上にロゴ）を使う。Mintlify の自動生成の画像の URL は `mintlify.app` のドメインになる。
   - `docs.json` の `seo.metatags` に `og:image` を置くと、全ページの自動生成の画像が置き換わってしまう（以前はそうしていた）。置かない。
   - 自動生成の画像の背景や文字は、`docs.json` の `thumbnails`（`appearance`・`background`・`fonts`）で変えられる。今は使っていない。
   - 肩書きなどを変えたら、`images/ogp.jpg` を作り直す（HTML をヘッドレス Chrome でスクリーンショットし、`sips` で JPEG にした）。
