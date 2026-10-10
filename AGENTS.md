@@ -5,8 +5,10 @@ Mintlify で作った個人サイト（自己紹介・Blog・Speaking）。`howd
 ## 開発
 
 - Node 22 が必要。`.node-version` で固定している（nodenv）。Node 25 では `mint` が動かない。
-- プレビュー: `nodenv exec npx mint dev`（http://localhost:3000）
-- 検証: `mint validate` と `mint broken-links`
+- 初回と、`package.json` が変わったときは `nodenv exec npm install`。Mintlify の CLI（`mint`）は `package.json` で宣言していて、`package-lock.json` で版を固定している。
+- プレビュー: `nodenv exec npm run dev`（http://localhost:3000）
+- 検証: `nodenv exec npm run validate` と `nodenv exec npm run broken-links`
+- 依存の脆弱性: GitHub の Dependabot alerts と security updates で通知と修正 PR を受ける。`mint` を上げるときは、`package.json` と `package-lock.json` を両方コミットする。
 - コミットは Conventional Commits 形式。作業の区切りごとに、確認を待たずにコミットしてよい。
 - `main` は、GitHub のルールセット（`protect-main`）で保護している。**`main` への直接の push は、できない**（管理者も例外ではない）。変更は、必ず、ブランチと PR を経由する。
   1. `main` から、ブランチを作る（`feat/…`、`fix/…`、`docs/…` など）。
