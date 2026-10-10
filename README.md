@@ -22,11 +22,11 @@ Personal site and blog of howdy39 (Tatsuya Nakano), built with Mintlify.
 Node 22 が必要です（`.node-version` で固定。nodenv を使っています）。
 
 ```bash
-nodenv exec npx mint dev          # http://localhost:3000 でプレビュー
-nodenv exec npx mint validate     # ビルドの検証
-nodenv exec npx mint broken-links # リンク切れの確認
+nodenv exec npm run dev          # http://localhost:3000 でプレビュー
+nodenv exec npm run validate     # ビルドの検証
+nodenv exec npm run broken-links # リンク切れの確認
 ```
 
-`main` に push すると、Mintlify が自動でデプロイします。
+`main` にマージすると、Mintlify が自動でデプロイします。
 
 記事や登壇の追加の手順、タグの一覧、`docs.json` やスタイルの注意点は [AGENTS.md](./AGENTS.md) にあります。
