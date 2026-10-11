@@ -1,0 +1,16 @@
+{
+  "name": "howdy39.dev",
+  "private": true,
+  "description": "howdy39.dev の開発と検証に使う、Mintlify CLI の宣言",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "mint dev",
+    "validate": "mint validate",
+    "broken-links": "mint broken-links"
+  },
+  "devDependencies": {
+    "mint": "^4.2.1000"
+  }
+}
