@@ -11,6 +11,6 @@
     "broken-links": "mint broken-links"
   },
   "devDependencies": {
-    "mint": "^4.2.1000"
+    "mint": "^4.2.1106"
   }
 }
